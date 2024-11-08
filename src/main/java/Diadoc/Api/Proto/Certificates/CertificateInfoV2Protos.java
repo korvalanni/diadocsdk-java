@@ -14,41 +14,37 @@ public final class CertificateInfoV2Protos {
   public enum CertificateType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>Unknown = 0 [deprecated = true];</code>
+     * <code>Unknown = 0;</code>
      */
-    @java.lang.Deprecated
     Unknown(0, 0),
     /**
-     * <code>Token = 1 [deprecated = true];</code>
+     * <code>Token = 1;</code>
      */
-    @java.lang.Deprecated
     Token(1, 1),
     /**
-     * <code>Dss = 2 [deprecated = true];</code>
+     * <code>Dss = 2;</code>
      */
-    @java.lang.Deprecated
     Dss(2, 2),
     /**
-     * <code>KonturCertificate = 3 [deprecated = true];</code>
+     * <code>KonturCertificate = 3;</code>
      */
-    @java.lang.Deprecated
     KonturCertificate(3, 3),
     ;
 
     /**
-     * <code>Unknown = 0 [deprecated = true];</code>
+     * <code>Unknown = 0;</code>
      */
     public static final int Unknown_VALUE = 0;
     /**
-     * <code>Token = 1 [deprecated = true];</code>
+     * <code>Token = 1;</code>
      */
     public static final int Token_VALUE = 1;
     /**
-     * <code>Dss = 2 [deprecated = true];</code>
+     * <code>Dss = 2;</code>
      */
     public static final int Dss_VALUE = 2;
     /**
-     * <code>KonturCertificate = 3 [deprecated = true];</code>
+     * <code>KonturCertificate = 3;</code>
      */
     public static final int KonturCertificate_VALUE = 3;
 
@@ -118,41 +114,37 @@ public final class CertificateInfoV2Protos {
   public enum CertificateSubjectType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownCertificateSubjectType = 0 [deprecated = true];</code>
+     * <code>UnknownCertificateSubjectType = 0;</code>
      */
-    @java.lang.Deprecated
     UnknownCertificateSubjectType(0, 0),
     /**
-     * <code>LegalEntity = 1 [deprecated = true];</code>
+     * <code>LegalEntity = 1;</code>
      */
-    @java.lang.Deprecated
     LegalEntity(1, 1),
     /**
-     * <code>IndividualEntity = 2 [deprecated = true];</code>
+     * <code>IndividualEntity = 2;</code>
      */
-    @java.lang.Deprecated
     IndividualEntity(2, 2),
     /**
-     * <code>PhysicalPerson = 3 [deprecated = true];</code>
+     * <code>PhysicalPerson = 3;</code>
      */
-    @java.lang.Deprecated
     PhysicalPerson(3, 3),
     ;
 
     /**
-     * <code>UnknownCertificateSubjectType = 0 [deprecated = true];</code>
+     * <code>UnknownCertificateSubjectType = 0;</code>
      */
     public static final int UnknownCertificateSubjectType_VALUE = 0;
     /**
-     * <code>LegalEntity = 1 [deprecated = true];</code>
+     * <code>LegalEntity = 1;</code>
      */
     public static final int LegalEntity_VALUE = 1;
     /**
-     * <code>IndividualEntity = 2 [deprecated = true];</code>
+     * <code>IndividualEntity = 2;</code>
      */
     public static final int IndividualEntity_VALUE = 2;
     /**
-     * <code>PhysicalPerson = 3 [deprecated = true];</code>
+     * <code>PhysicalPerson = 3;</code>
      */
     public static final int PhysicalPerson_VALUE = 3;
 
@@ -222,50 +214,45 @@ public final class CertificateInfoV2Protos {
   public enum DssCertificateType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownDssType = 0 [deprecated = true];</code>
+     * <code>UnknownDssType = 0;</code>
      */
-    @java.lang.Deprecated
     UnknownDssType(0, 0),
     /**
-     * <code>MyDss = 1 [deprecated = true];</code>
+     * <code>MyDss = 1;</code>
      */
-    @java.lang.Deprecated
     MyDss(1, 1),
     /**
-     * <code>KSignServer = 2 [deprecated = true];</code>
+     * <code>KSignServer = 2;</code>
      */
-    @java.lang.Deprecated
     KSignServer(2, 2),
     /**
-     * <code>KSignRutoken = 3 [deprecated = true];</code>
+     * <code>KSignRutoken = 3;</code>
      */
-    @java.lang.Deprecated
     KSignRutoken(3, 3),
     /**
-     * <code>KSignMobile = 4 [deprecated = true];</code>
+     * <code>KSignMobile = 4;</code>
      */
-    @java.lang.Deprecated
     KSignMobile(4, 4),
     ;
 
     /**
-     * <code>UnknownDssType = 0 [deprecated = true];</code>
+     * <code>UnknownDssType = 0;</code>
      */
     public static final int UnknownDssType_VALUE = 0;
     /**
-     * <code>MyDss = 1 [deprecated = true];</code>
+     * <code>MyDss = 1;</code>
      */
     public static final int MyDss_VALUE = 1;
     /**
-     * <code>KSignServer = 2 [deprecated = true];</code>
+     * <code>KSignServer = 2;</code>
      */
     public static final int KSignServer_VALUE = 2;
     /**
-     * <code>KSignRutoken = 3 [deprecated = true];</code>
+     * <code>KSignRutoken = 3;</code>
      */
     public static final int KSignRutoken_VALUE = 3;
     /**
-     * <code>KSignMobile = 4 [deprecated = true];</code>
+     * <code>KSignMobile = 4;</code>
      */
     public static final int KSignMobile_VALUE = 4;
 
@@ -336,41 +323,37 @@ public final class CertificateInfoV2Protos {
   public enum CertificateUsage
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownUsage = 0 [deprecated = true];</code>
+     * <code>UnknownUsage = 0;</code>
      */
-    @java.lang.Deprecated
     UnknownUsage(0, 0),
     /**
-     * <code>KonturCertificateUsage = 1 [deprecated = true];</code>
+     * <code>KonturCertificateUsage = 1;</code>
      */
-    @java.lang.Deprecated
     KonturCertificateUsage(1, 1),
     /**
-     * <code>TokenUsage = 2 [deprecated = true];</code>
+     * <code>TokenUsage = 2;</code>
      */
-    @java.lang.Deprecated
     TokenUsage(2, 2),
     /**
-     * <code>DssUsage = 3 [deprecated = true];</code>
+     * <code>DssUsage = 3;</code>
      */
-    @java.lang.Deprecated
     DssUsage(3, 3),
     ;
 
     /**
-     * <code>UnknownUsage = 0 [deprecated = true];</code>
+     * <code>UnknownUsage = 0;</code>
      */
     public static final int UnknownUsage_VALUE = 0;
     /**
-     * <code>KonturCertificateUsage = 1 [deprecated = true];</code>
+     * <code>KonturCertificateUsage = 1;</code>
      */
     public static final int KonturCertificateUsage_VALUE = 1;
     /**
-     * <code>TokenUsage = 2 [deprecated = true];</code>
+     * <code>TokenUsage = 2;</code>
      */
     public static final int TokenUsage_VALUE = 2;
     /**
-     * <code>DssUsage = 3 [deprecated = true];</code>
+     * <code>DssUsage = 3;</code>
      */
     public static final int DssUsage_VALUE = 3;
 
@@ -439,187 +422,187 @@ public final class CertificateInfoV2Protos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated boolean hasThumbprint();
+    boolean hasThumbprint();
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated java.lang.String getThumbprint();
+    java.lang.String getThumbprint();
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getThumbprintBytes();
 
     /**
-     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
      */
-    @java.lang.Deprecated boolean hasType();
+    boolean hasType();
     /**
-     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
      */
-    @java.lang.Deprecated Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType();
+    Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType();
 
     /**
-     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidFrom = 3;</code>
      */
-    @java.lang.Deprecated boolean hasValidFrom();
+    boolean hasValidFrom();
     /**
-     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidFrom = 3;</code>
      */
-    @java.lang.Deprecated long getValidFrom();
+    long getValidFrom();
 
     /**
-     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidTo = 4;</code>
      */
-    @java.lang.Deprecated boolean hasValidTo();
+    boolean hasValidTo();
     /**
-     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidTo = 4;</code>
      */
-    @java.lang.Deprecated long getValidTo();
+    long getValidTo();
 
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
      */
-    @java.lang.Deprecated boolean hasPrivateKeyValidFrom();
+    boolean hasPrivateKeyValidFrom();
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
      */
-    @java.lang.Deprecated long getPrivateKeyValidFrom();
+    long getPrivateKeyValidFrom();
 
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
      */
-    @java.lang.Deprecated boolean hasPrivateKeyValidTo();
+    boolean hasPrivateKeyValidTo();
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
      */
-    @java.lang.Deprecated long getPrivateKeyValidTo();
+    long getPrivateKeyValidTo();
 
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated boolean hasOrganizationName();
+    boolean hasOrganizationName();
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated java.lang.String getOrganizationName();
+    java.lang.String getOrganizationName();
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getOrganizationNameBytes();
 
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated boolean hasInn();
+    boolean hasInn();
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated java.lang.String getInn();
+    java.lang.String getInn();
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getInnBytes();
 
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated boolean hasUserFirstName();
+    boolean hasUserFirstName();
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated java.lang.String getUserFirstName();
+    java.lang.String getUserFirstName();
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getUserFirstNameBytes();
 
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated boolean hasUserMiddleName();
+    boolean hasUserMiddleName();
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated java.lang.String getUserMiddleName();
+    java.lang.String getUserMiddleName();
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getUserMiddleNameBytes();
 
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated boolean hasUserLastName();
+    boolean hasUserLastName();
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated java.lang.String getUserLastName();
+    java.lang.String getUserLastName();
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getUserLastNameBytes();
 
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated boolean hasUserShortName();
+    boolean hasUserShortName();
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated java.lang.String getUserShortName();
+    java.lang.String getUserShortName();
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated com.google.protobuf.ByteString
+    com.google.protobuf.ByteString
         getUserShortNameBytes();
 
     /**
-     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     * <code>optional bool IsDefault = 13;</code>
      */
-    @java.lang.Deprecated boolean hasIsDefault();
+    boolean hasIsDefault();
     /**
-     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     * <code>optional bool IsDefault = 13;</code>
      */
-    @java.lang.Deprecated boolean getIsDefault();
+    boolean getIsDefault();
 
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
      */
-    @java.lang.Deprecated boolean hasSubjectType();
+    boolean hasSubjectType();
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
      */
-    @java.lang.Deprecated Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType();
+    Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType();
 
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList();
+    java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList();
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated int getUsagesCount();
+    int getUsagesCount();
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index);
+    Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index);
 
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
      */
-    @java.lang.Deprecated boolean hasDssType();
+    boolean hasDssType();
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
      */
-    @java.lang.Deprecated Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType();
+    Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Certificates.CertificateInfoV2}
@@ -852,15 +835,15 @@ public final class CertificateInfoV2Protos {
     public static final int THUMBPRINT_FIELD_NUMBER = 1;
     private java.lang.Object thumbprint_;
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated public boolean hasThumbprint() {
+    public boolean hasThumbprint() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated public java.lang.String getThumbprint() {
+    public java.lang.String getThumbprint() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -875,9 +858,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     * <code>required string Thumbprint = 1;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getThumbprintBytes() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
@@ -894,90 +877,90 @@ public final class CertificateInfoV2Protos {
     public static final int TYPE_FIELD_NUMBER = 2;
     private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType type_;
     /**
-     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
      */
-    @java.lang.Deprecated public boolean hasType() {
+    public boolean hasType() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+     * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
      */
-    @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType() {
+    public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType() {
       return type_;
     }
 
     public static final int VALIDFROM_FIELD_NUMBER = 3;
     private long validFrom_;
     /**
-     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidFrom = 3;</code>
      */
-    @java.lang.Deprecated public boolean hasValidFrom() {
+    public boolean hasValidFrom() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidFrom = 3;</code>
      */
-    @java.lang.Deprecated public long getValidFrom() {
+    public long getValidFrom() {
       return validFrom_;
     }
 
     public static final int VALIDTO_FIELD_NUMBER = 4;
     private long validTo_;
     /**
-     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidTo = 4;</code>
      */
-    @java.lang.Deprecated public boolean hasValidTo() {
+    public boolean hasValidTo() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     * <code>optional sfixed64 ValidTo = 4;</code>
      */
-    @java.lang.Deprecated public long getValidTo() {
+    public long getValidTo() {
       return validTo_;
     }
 
     public static final int PRIVATEKEYVALIDFROM_FIELD_NUMBER = 5;
     private long privateKeyValidFrom_;
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
      */
-    @java.lang.Deprecated public boolean hasPrivateKeyValidFrom() {
+    public boolean hasPrivateKeyValidFrom() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
      */
-    @java.lang.Deprecated public long getPrivateKeyValidFrom() {
+    public long getPrivateKeyValidFrom() {
       return privateKeyValidFrom_;
     }
 
     public static final int PRIVATEKEYVALIDTO_FIELD_NUMBER = 6;
     private long privateKeyValidTo_;
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
      */
-    @java.lang.Deprecated public boolean hasPrivateKeyValidTo() {
+    public boolean hasPrivateKeyValidTo() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
      */
-    @java.lang.Deprecated public long getPrivateKeyValidTo() {
+    public long getPrivateKeyValidTo() {
       return privateKeyValidTo_;
     }
 
     public static final int ORGANIZATIONNAME_FIELD_NUMBER = 7;
     private java.lang.Object organizationName_;
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated public boolean hasOrganizationName() {
+    public boolean hasOrganizationName() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated public java.lang.String getOrganizationName() {
+    public java.lang.String getOrganizationName() {
       java.lang.Object ref = organizationName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -992,9 +975,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     * <code>optional string OrganizationName = 7;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getOrganizationNameBytes() {
       java.lang.Object ref = organizationName_;
       if (ref instanceof java.lang.String) {
@@ -1011,15 +994,15 @@ public final class CertificateInfoV2Protos {
     public static final int INN_FIELD_NUMBER = 8;
     private java.lang.Object inn_;
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated public boolean hasInn() {
+    public boolean hasInn() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated public java.lang.String getInn() {
+    public java.lang.String getInn() {
       java.lang.Object ref = inn_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1034,9 +1017,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string Inn = 8 [deprecated = true];</code>
+     * <code>optional string Inn = 8;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getInnBytes() {
       java.lang.Object ref = inn_;
       if (ref instanceof java.lang.String) {
@@ -1053,15 +1036,15 @@ public final class CertificateInfoV2Protos {
     public static final int USERFIRSTNAME_FIELD_NUMBER = 9;
     private java.lang.Object userFirstName_;
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated public boolean hasUserFirstName() {
+    public boolean hasUserFirstName() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated public java.lang.String getUserFirstName() {
+    public java.lang.String getUserFirstName() {
       java.lang.Object ref = userFirstName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1076,9 +1059,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     * <code>optional string UserFirstName = 9;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getUserFirstNameBytes() {
       java.lang.Object ref = userFirstName_;
       if (ref instanceof java.lang.String) {
@@ -1095,15 +1078,15 @@ public final class CertificateInfoV2Protos {
     public static final int USERMIDDLENAME_FIELD_NUMBER = 10;
     private java.lang.Object userMiddleName_;
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated public boolean hasUserMiddleName() {
+    public boolean hasUserMiddleName() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated public java.lang.String getUserMiddleName() {
+    public java.lang.String getUserMiddleName() {
       java.lang.Object ref = userMiddleName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1118,9 +1101,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     * <code>optional string UserMiddleName = 10;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getUserMiddleNameBytes() {
       java.lang.Object ref = userMiddleName_;
       if (ref instanceof java.lang.String) {
@@ -1137,15 +1120,15 @@ public final class CertificateInfoV2Protos {
     public static final int USERLASTNAME_FIELD_NUMBER = 11;
     private java.lang.Object userLastName_;
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated public boolean hasUserLastName() {
+    public boolean hasUserLastName() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated public java.lang.String getUserLastName() {
+    public java.lang.String getUserLastName() {
       java.lang.Object ref = userLastName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1160,9 +1143,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     * <code>optional string UserLastName = 11;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getUserLastNameBytes() {
       java.lang.Object ref = userLastName_;
       if (ref instanceof java.lang.String) {
@@ -1179,15 +1162,15 @@ public final class CertificateInfoV2Protos {
     public static final int USERSHORTNAME_FIELD_NUMBER = 12;
     private java.lang.Object userShortName_;
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated public boolean hasUserShortName() {
+    public boolean hasUserShortName() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated public java.lang.String getUserShortName() {
+    public java.lang.String getUserShortName() {
       java.lang.Object ref = userShortName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1202,9 +1185,9 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     * <code>optional string UserShortName = 12;</code>
      */
-    @java.lang.Deprecated public com.google.protobuf.ByteString
+    public com.google.protobuf.ByteString
         getUserShortNameBytes() {
       java.lang.Object ref = userShortName_;
       if (ref instanceof java.lang.String) {
@@ -1221,66 +1204,66 @@ public final class CertificateInfoV2Protos {
     public static final int ISDEFAULT_FIELD_NUMBER = 13;
     private boolean isDefault_;
     /**
-     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     * <code>optional bool IsDefault = 13;</code>
      */
-    @java.lang.Deprecated public boolean hasIsDefault() {
+    public boolean hasIsDefault() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
-     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     * <code>optional bool IsDefault = 13;</code>
      */
-    @java.lang.Deprecated public boolean getIsDefault() {
+    public boolean getIsDefault() {
       return isDefault_;
     }
 
     public static final int SUBJECTTYPE_FIELD_NUMBER = 14;
     private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType subjectType_;
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
      */
-    @java.lang.Deprecated public boolean hasSubjectType() {
+    public boolean hasSubjectType() {
       return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
      */
-    @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
+    public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
       return subjectType_;
     }
 
     public static final int USAGES_FIELD_NUMBER = 15;
     private java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> usages_;
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
+    public java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
       return usages_;
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated public int getUsagesCount() {
+    public int getUsagesCount() {
       return usages_.size();
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+     * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
      */
-    @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
+    public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
       return usages_.get(index);
     }
 
     public static final int DSSTYPE_FIELD_NUMBER = 16;
     private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType dssType_;
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
      */
-    @java.lang.Deprecated public boolean hasDssType() {
+    public boolean hasDssType() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+     * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
      */
-    @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType() {
+    public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType() {
       return dssType_;
     }
 
@@ -1813,15 +1796,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object thumbprint_ = "";
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public boolean hasThumbprint() {
+      public boolean hasThumbprint() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public java.lang.String getThumbprint() {
+      public java.lang.String getThumbprint() {
         java.lang.Object ref = thumbprint_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -1836,9 +1819,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getThumbprintBytes() {
         java.lang.Object ref = thumbprint_;
         if (ref instanceof String) {
@@ -1852,9 +1835,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public Builder setThumbprint(
+      public Builder setThumbprint(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1865,18 +1848,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public Builder clearThumbprint() {
+      public Builder clearThumbprint() {
         bitField0_ = (bitField0_ & ~0x00000001);
         thumbprint_ = getDefaultInstance().getThumbprint();
         onChanged();
         return this;
       }
       /**
-       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       * <code>required string Thumbprint = 1;</code>
        */
-      @java.lang.Deprecated public Builder setThumbprintBytes(
+      public Builder setThumbprintBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1889,21 +1872,21 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType type_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType.Unknown;
       /**
-       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
        */
-      @java.lang.Deprecated public boolean hasType() {
+      public boolean hasType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
        */
-      @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType() {
+      public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType getType() {
         return type_;
       }
       /**
-       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
        */
-      @java.lang.Deprecated public Builder setType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType value) {
+      public Builder setType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1913,9 +1896,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2 [deprecated = true];</code>
+       * <code>required .Diadoc.Api.Proto.Certificates.CertificateType Type = 2;</code>
        */
-      @java.lang.Deprecated public Builder clearType() {
+      public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000002);
         type_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateType.Unknown;
         onChanged();
@@ -1924,30 +1907,30 @@ public final class CertificateInfoV2Protos {
 
       private long validFrom_ ;
       /**
-       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidFrom = 3;</code>
        */
-      @java.lang.Deprecated public boolean hasValidFrom() {
+      public boolean hasValidFrom() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidFrom = 3;</code>
        */
-      @java.lang.Deprecated public long getValidFrom() {
+      public long getValidFrom() {
         return validFrom_;
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidFrom = 3;</code>
        */
-      @java.lang.Deprecated public Builder setValidFrom(long value) {
+      public Builder setValidFrom(long value) {
         bitField0_ |= 0x00000004;
         validFrom_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidFrom = 3;</code>
        */
-      @java.lang.Deprecated public Builder clearValidFrom() {
+      public Builder clearValidFrom() {
         bitField0_ = (bitField0_ & ~0x00000004);
         validFrom_ = 0L;
         onChanged();
@@ -1956,30 +1939,30 @@ public final class CertificateInfoV2Protos {
 
       private long validTo_ ;
       /**
-       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidTo = 4;</code>
        */
-      @java.lang.Deprecated public boolean hasValidTo() {
+      public boolean hasValidTo() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidTo = 4;</code>
        */
-      @java.lang.Deprecated public long getValidTo() {
+      public long getValidTo() {
         return validTo_;
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidTo = 4;</code>
        */
-      @java.lang.Deprecated public Builder setValidTo(long value) {
+      public Builder setValidTo(long value) {
         bitField0_ |= 0x00000008;
         validTo_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       * <code>optional sfixed64 ValidTo = 4;</code>
        */
-      @java.lang.Deprecated public Builder clearValidTo() {
+      public Builder clearValidTo() {
         bitField0_ = (bitField0_ & ~0x00000008);
         validTo_ = 0L;
         onChanged();
@@ -1988,30 +1971,30 @@ public final class CertificateInfoV2Protos {
 
       private long privateKeyValidFrom_ ;
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
        */
-      @java.lang.Deprecated public boolean hasPrivateKeyValidFrom() {
+      public boolean hasPrivateKeyValidFrom() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
        */
-      @java.lang.Deprecated public long getPrivateKeyValidFrom() {
+      public long getPrivateKeyValidFrom() {
         return privateKeyValidFrom_;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
        */
-      @java.lang.Deprecated public Builder setPrivateKeyValidFrom(long value) {
+      public Builder setPrivateKeyValidFrom(long value) {
         bitField0_ |= 0x00000010;
         privateKeyValidFrom_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
        */
-      @java.lang.Deprecated public Builder clearPrivateKeyValidFrom() {
+      public Builder clearPrivateKeyValidFrom() {
         bitField0_ = (bitField0_ & ~0x00000010);
         privateKeyValidFrom_ = 0L;
         onChanged();
@@ -2020,30 +2003,30 @@ public final class CertificateInfoV2Protos {
 
       private long privateKeyValidTo_ ;
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
        */
-      @java.lang.Deprecated public boolean hasPrivateKeyValidTo() {
+      public boolean hasPrivateKeyValidTo() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
        */
-      @java.lang.Deprecated public long getPrivateKeyValidTo() {
+      public long getPrivateKeyValidTo() {
         return privateKeyValidTo_;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
        */
-      @java.lang.Deprecated public Builder setPrivateKeyValidTo(long value) {
+      public Builder setPrivateKeyValidTo(long value) {
         bitField0_ |= 0x00000020;
         privateKeyValidTo_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
        */
-      @java.lang.Deprecated public Builder clearPrivateKeyValidTo() {
+      public Builder clearPrivateKeyValidTo() {
         bitField0_ = (bitField0_ & ~0x00000020);
         privateKeyValidTo_ = 0L;
         onChanged();
@@ -2052,15 +2035,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object organizationName_ = "";
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public boolean hasOrganizationName() {
+      public boolean hasOrganizationName() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public java.lang.String getOrganizationName() {
+      public java.lang.String getOrganizationName() {
         java.lang.Object ref = organizationName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2075,9 +2058,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getOrganizationNameBytes() {
         java.lang.Object ref = organizationName_;
         if (ref instanceof String) {
@@ -2091,9 +2074,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public Builder setOrganizationName(
+      public Builder setOrganizationName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2104,18 +2087,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public Builder clearOrganizationName() {
+      public Builder clearOrganizationName() {
         bitField0_ = (bitField0_ & ~0x00000040);
         organizationName_ = getDefaultInstance().getOrganizationName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       * <code>optional string OrganizationName = 7;</code>
        */
-      @java.lang.Deprecated public Builder setOrganizationNameBytes(
+      public Builder setOrganizationNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2128,15 +2111,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object inn_ = "";
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public boolean hasInn() {
+      public boolean hasInn() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public java.lang.String getInn() {
+      public java.lang.String getInn() {
         java.lang.Object ref = inn_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2151,9 +2134,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getInnBytes() {
         java.lang.Object ref = inn_;
         if (ref instanceof String) {
@@ -2167,9 +2150,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public Builder setInn(
+      public Builder setInn(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2180,18 +2163,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public Builder clearInn() {
+      public Builder clearInn() {
         bitField0_ = (bitField0_ & ~0x00000080);
         inn_ = getDefaultInstance().getInn();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string Inn = 8 [deprecated = true];</code>
+       * <code>optional string Inn = 8;</code>
        */
-      @java.lang.Deprecated public Builder setInnBytes(
+      public Builder setInnBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2204,15 +2187,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userFirstName_ = "";
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public boolean hasUserFirstName() {
+      public boolean hasUserFirstName() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public java.lang.String getUserFirstName() {
+      public java.lang.String getUserFirstName() {
         java.lang.Object ref = userFirstName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2227,9 +2210,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getUserFirstNameBytes() {
         java.lang.Object ref = userFirstName_;
         if (ref instanceof String) {
@@ -2243,9 +2226,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public Builder setUserFirstName(
+      public Builder setUserFirstName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2256,18 +2239,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public Builder clearUserFirstName() {
+      public Builder clearUserFirstName() {
         bitField0_ = (bitField0_ & ~0x00000100);
         userFirstName_ = getDefaultInstance().getUserFirstName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       * <code>optional string UserFirstName = 9;</code>
        */
-      @java.lang.Deprecated public Builder setUserFirstNameBytes(
+      public Builder setUserFirstNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2280,15 +2263,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userMiddleName_ = "";
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public boolean hasUserMiddleName() {
+      public boolean hasUserMiddleName() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public java.lang.String getUserMiddleName() {
+      public java.lang.String getUserMiddleName() {
         java.lang.Object ref = userMiddleName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2303,9 +2286,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getUserMiddleNameBytes() {
         java.lang.Object ref = userMiddleName_;
         if (ref instanceof String) {
@@ -2319,9 +2302,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public Builder setUserMiddleName(
+      public Builder setUserMiddleName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2332,18 +2315,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public Builder clearUserMiddleName() {
+      public Builder clearUserMiddleName() {
         bitField0_ = (bitField0_ & ~0x00000200);
         userMiddleName_ = getDefaultInstance().getUserMiddleName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       * <code>optional string UserMiddleName = 10;</code>
        */
-      @java.lang.Deprecated public Builder setUserMiddleNameBytes(
+      public Builder setUserMiddleNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2356,15 +2339,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userLastName_ = "";
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public boolean hasUserLastName() {
+      public boolean hasUserLastName() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public java.lang.String getUserLastName() {
+      public java.lang.String getUserLastName() {
         java.lang.Object ref = userLastName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2379,9 +2362,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getUserLastNameBytes() {
         java.lang.Object ref = userLastName_;
         if (ref instanceof String) {
@@ -2395,9 +2378,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public Builder setUserLastName(
+      public Builder setUserLastName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2408,18 +2391,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public Builder clearUserLastName() {
+      public Builder clearUserLastName() {
         bitField0_ = (bitField0_ & ~0x00000400);
         userLastName_ = getDefaultInstance().getUserLastName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       * <code>optional string UserLastName = 11;</code>
        */
-      @java.lang.Deprecated public Builder setUserLastNameBytes(
+      public Builder setUserLastNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2432,15 +2415,15 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userShortName_ = "";
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public boolean hasUserShortName() {
+      public boolean hasUserShortName() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public java.lang.String getUserShortName() {
+      public java.lang.String getUserShortName() {
         java.lang.Object ref = userShortName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2455,9 +2438,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public com.google.protobuf.ByteString
+      public com.google.protobuf.ByteString
           getUserShortNameBytes() {
         java.lang.Object ref = userShortName_;
         if (ref instanceof String) {
@@ -2471,9 +2454,9 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public Builder setUserShortName(
+      public Builder setUserShortName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2484,18 +2467,18 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public Builder clearUserShortName() {
+      public Builder clearUserShortName() {
         bitField0_ = (bitField0_ & ~0x00000800);
         userShortName_ = getDefaultInstance().getUserShortName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       * <code>optional string UserShortName = 12;</code>
        */
-      @java.lang.Deprecated public Builder setUserShortNameBytes(
+      public Builder setUserShortNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2508,30 +2491,30 @@ public final class CertificateInfoV2Protos {
 
       private boolean isDefault_ ;
       /**
-       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       * <code>optional bool IsDefault = 13;</code>
        */
-      @java.lang.Deprecated public boolean hasIsDefault() {
+      public boolean hasIsDefault() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       /**
-       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       * <code>optional bool IsDefault = 13;</code>
        */
-      @java.lang.Deprecated public boolean getIsDefault() {
+      public boolean getIsDefault() {
         return isDefault_;
       }
       /**
-       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       * <code>optional bool IsDefault = 13;</code>
        */
-      @java.lang.Deprecated public Builder setIsDefault(boolean value) {
+      public Builder setIsDefault(boolean value) {
         bitField0_ |= 0x00001000;
         isDefault_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       * <code>optional bool IsDefault = 13;</code>
        */
-      @java.lang.Deprecated public Builder clearIsDefault() {
+      public Builder clearIsDefault() {
         bitField0_ = (bitField0_ & ~0x00001000);
         isDefault_ = false;
         onChanged();
@@ -2540,21 +2523,21 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType subjectType_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType.UnknownCertificateSubjectType;
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
        */
-      @java.lang.Deprecated public boolean hasSubjectType() {
+      public boolean hasSubjectType() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
        */
-      @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
+      public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
         return subjectType_;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
        */
-      @java.lang.Deprecated public Builder setSubjectType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType value) {
+      public Builder setSubjectType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2564,9 +2547,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.CertificateSubjectType SubjectType = 14;</code>
        */
-      @java.lang.Deprecated public Builder clearSubjectType() {
+      public Builder clearSubjectType() {
         bitField0_ = (bitField0_ & ~0x00002000);
         subjectType_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateSubjectType.UnknownCertificateSubjectType;
         onChanged();
@@ -2582,27 +2565,27 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
+      public java.util.List<Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
         return java.util.Collections.unmodifiableList(usages_);
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public int getUsagesCount() {
+      public int getUsagesCount() {
         return usages_.size();
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
+      public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
         return usages_.get(index);
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public Builder setUsages(
+      public Builder setUsages(
           int index, Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage value) {
         if (value == null) {
           throw new NullPointerException();
@@ -2613,9 +2596,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public Builder addUsages(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage value) {
+      public Builder addUsages(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2625,9 +2608,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public Builder addAllUsages(
+      public Builder addAllUsages(
           java.lang.Iterable<? extends Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.CertificateUsage> values) {
         ensureUsagesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2636,9 +2619,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15 [deprecated = true];</code>
+       * <code>repeated .Diadoc.Api.Proto.Certificates.CertificateUsage Usages = 15;</code>
        */
-      @java.lang.Deprecated public Builder clearUsages() {
+      public Builder clearUsages() {
         usages_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
@@ -2647,21 +2630,21 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType dssType_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType.UnknownDssType;
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
        */
-      @java.lang.Deprecated public boolean hasDssType() {
+      public boolean hasDssType() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
        */
-      @java.lang.Deprecated public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType() {
+      public Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType getDssType() {
         return dssType_;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
        */
-      @java.lang.Deprecated public Builder setDssType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType value) {
+      public Builder setDssType(Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2671,9 +2654,9 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16 [deprecated = true];</code>
+       * <code>optional .Diadoc.Api.Proto.Certificates.DssCertificateType DssType = 16;</code>
        */
-      @java.lang.Deprecated public Builder clearDssType() {
+      public Builder clearDssType() {
         bitField0_ = (bitField0_ & ~0x00008000);
         dssType_ = Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos.DssCertificateType.UnknownDssType;
         onChanged();
@@ -2706,35 +2689,32 @@ public final class CertificateInfoV2Protos {
   static {
     java.lang.String[] descriptorData = {
       "\n$Certificates/CertificateInfoV2.proto\022\035" +
-      "Diadoc.Api.Proto.Certificates\"\350\004\n\021Certif" +
-      "icateInfoV2\022\026\n\nThumbprint\030\001 \002(\tB\002\030\001\022@\n\004T" +
-      "ype\030\002 \002(\0162..Diadoc.Api.Proto.Certificate" +
-      "s.CertificateTypeB\002\030\001\022\025\n\tValidFrom\030\003 \001(\020" +
-      "B\002\030\001\022\023\n\007ValidTo\030\004 \001(\020B\002\030\001\022\037\n\023PrivateKeyV" +
-      "alidFrom\030\005 \001(\020B\002\030\001\022\035\n\021PrivateKeyValidTo\030" +
-      "\006 \001(\020B\002\030\001\022\034\n\020OrganizationName\030\007 \001(\tB\002\030\001\022" +
-      "\017\n\003Inn\030\010 \001(\tB\002\030\001\022\031\n\rUserFirstName\030\t \001(\tB" +
-      "\002\030\001\022\032\n\016UserMiddleName\030\n \001(\tB\002\030\001\022\030\n\014UserL",
-      "astName\030\013 \001(\tB\002\030\001\022\031\n\rUserShortName\030\014 \001(\t" +
-      "B\002\030\001\022\025\n\tIsDefault\030\r \001(\010B\002\030\001\022N\n\013SubjectTy" +
-      "pe\030\016 \001(\01625.Diadoc.Api.Proto.Certificates" +
-      ".CertificateSubjectTypeB\002\030\001\022C\n\006Usages\030\017 " +
-      "\003(\0162/.Diadoc.Api.Proto.Certificates.Cert" +
-      "ificateUsageB\002\030\001\022F\n\007DssType\030\020 \001(\01621.Diad" +
-      "oc.Api.Proto.Certificates.DssCertificate" +
-      "TypeB\002\030\001*Y\n\017CertificateType\022\017\n\007Unknown\020\000" +
-      "\032\002\010\001\022\r\n\005Token\020\001\032\002\010\001\022\013\n\003Dss\020\002\032\002\010\001\022\031\n\021Kont" +
-      "urCertificate\020\003\032\002\010\001*\206\001\n\026CertificateSubje",
-      "ctType\022%\n\035UnknownCertificateSubjectType\020" +
-      "\000\032\002\010\001\022\023\n\013LegalEntity\020\001\032\002\010\001\022\030\n\020Individual" +
-      "Entity\020\002\032\002\010\001\022\026\n\016PhysicalPerson\020\003\032\002\010\001*{\n\022" +
-      "DssCertificateType\022\026\n\016UnknownDssType\020\000\032\002" +
-      "\010\001\022\r\n\005MyDss\020\001\032\002\010\001\022\023\n\013KSignServer\020\002\032\002\010\001\022\024" +
-      "\n\014KSignRutoken\020\003\032\002\010\001\022\023\n\013KSignMobile\020\004\032\002\010" +
-      "\001*n\n\020CertificateUsage\022\024\n\014UnknownUsage\020\000\032" +
-      "\002\010\001\022\036\n\026KonturCertificateUsage\020\001\032\002\010\001\022\022\n\nT" +
-      "okenUsage\020\002\032\002\010\001\022\020\n\010DssUsage\020\003\032\002\010\001B\031B\027Cer" +
-      "tificateInfoV2Protos"
+      "Diadoc.Api.Proto.Certificates\"\250\004\n\021Certif" +
+      "icateInfoV2\022\022\n\nThumbprint\030\001 \002(\t\022<\n\004Type\030" +
+      "\002 \002(\0162..Diadoc.Api.Proto.Certificates.Ce" +
+      "rtificateType\022\021\n\tValidFrom\030\003 \001(\020\022\017\n\007Vali" +
+      "dTo\030\004 \001(\020\022\033\n\023PrivateKeyValidFrom\030\005 \001(\020\022\031" +
+      "\n\021PrivateKeyValidTo\030\006 \001(\020\022\030\n\020Organizatio" +
+      "nName\030\007 \001(\t\022\013\n\003Inn\030\010 \001(\t\022\025\n\rUserFirstNam" +
+      "e\030\t \001(\t\022\026\n\016UserMiddleName\030\n \001(\t\022\024\n\014UserL" +
+      "astName\030\013 \001(\t\022\025\n\rUserShortName\030\014 \001(\t\022\021\n\t",
+      "IsDefault\030\r \001(\010\022J\n\013SubjectType\030\016 \001(\01625.D" +
+      "iadoc.Api.Proto.Certificates.Certificate" +
+      "SubjectType\022?\n\006Usages\030\017 \003(\0162/.Diadoc.Api" +
+      ".Proto.Certificates.CertificateUsage\022B\n\007" +
+      "DssType\030\020 \001(\01621.Diadoc.Api.Proto.Certifi" +
+      "cates.DssCertificateType*I\n\017CertificateT" +
+      "ype\022\013\n\007Unknown\020\000\022\t\n\005Token\020\001\022\007\n\003Dss\020\002\022\025\n\021" +
+      "KonturCertificate\020\003*v\n\026CertificateSubjec" +
+      "tType\022!\n\035UnknownCertificateSubjectType\020\000" +
+      "\022\017\n\013LegalEntity\020\001\022\024\n\020IndividualEntity\020\002\022",
+      "\022\n\016PhysicalPerson\020\003*g\n\022DssCertificateTyp" +
+      "e\022\022\n\016UnknownDssType\020\000\022\t\n\005MyDss\020\001\022\017\n\013KSig" +
+      "nServer\020\002\022\020\n\014KSignRutoken\020\003\022\017\n\013KSignMobi" +
+      "le\020\004*^\n\020CertificateUsage\022\020\n\014UnknownUsage" +
+      "\020\000\022\032\n\026KonturCertificateUsage\020\001\022\016\n\nTokenU" +
+      "sage\020\002\022\014\n\010DssUsage\020\003B\031B\027CertificateInfoV" +
+      "2Protos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
