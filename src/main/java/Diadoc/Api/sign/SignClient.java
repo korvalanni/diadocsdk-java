@@ -96,7 +96,8 @@ public class SignClient {
     }
 
     /**
-     * @deprecated Метод устарел
+     * @deprecated Метод устарел.
+     * Подробная информация доступна в <a href="https://developer.kontur.ru/docs/diadoc-api/http/obsolete/AutoSignReceipts.html">документации</a>.
      */
     public AsyncMethodResult autoSignReceipts(String boxId, @Nullable String certificateThumbprint, @Nullable String batchKey) throws DiadocSdkException {
         if (boxId == null) {
@@ -126,7 +127,8 @@ public class SignClient {
     }
 
     /**
-     * @deprecated Метод устарел
+     * @deprecated Метод устарел.
+     * Подробная информация доступна в <a href="https://developer.kontur.ru/docs/diadoc-api/http/obsolete/AutoSignReceiptsResult.html">документации</a>.
      */
     public AutosignReceiptsResult waitAutosignReceiptsResult(String taskId, Integer timeoutInMillis)
             throws DiadocSdkException {

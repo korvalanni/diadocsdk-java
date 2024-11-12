@@ -539,6 +539,12 @@ public class GenerateClient {
         }
     }
 
+    /**
+     * @deprecated Метод устарел.
+     * Используйте {@link #generateTitleXml(String, String, String, String, Integer, byte[], String, String)} 
+     */
+
+    @Deprecated
     public GeneratedFile generateAcceptanceCertificateXmlForBuyer(AcceptanceCertificateBuyerTitleInfo buyerTitleInfo,
                                                                   String boxId,
                                                                   String sellerTitleMessageId,
