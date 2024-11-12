@@ -13,31 +13,55 @@ public final class CertificateListProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> 
+    @java.lang.Deprecated java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> 
         getCertificatesList();
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index);
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index);
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    int getCertificatesCount();
+    @java.lang.Deprecated int getCertificatesCount();
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
+    @java.lang.Deprecated java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
         getCertificatesOrBuilderList();
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
         int index);
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.CertificateList}
+   *
+   * <pre>
+   * Устарело. Используйте вместо этого Diadoc.Api.Proto.Certificates.CertificateList
+   * </pre>
    */
   public static final class CertificateList extends
       com.google.protobuf.GeneratedMessage implements
@@ -141,34 +165,54 @@ public final class CertificateListProtos {
     public static final int CERTIFICATES_FIELD_NUMBER = 1;
     private java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> certificates_;
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> getCertificatesList() {
+    @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> getCertificatesList() {
       return certificates_;
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    public java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
+    @java.lang.Deprecated public java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
         getCertificatesOrBuilderList() {
       return certificates_;
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    public int getCertificatesCount() {
+    @java.lang.Deprecated public int getCertificatesCount() {
       return certificates_.size();
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index) {
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index) {
       return certificates_.get(index);
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
         int index) {
       return certificates_.get(index);
     }
@@ -291,6 +335,10 @@ public final class CertificateListProtos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.CertificateList}
+     *
+     * <pre>
+     * Устарело. Используйте вместо этого Diadoc.Api.Proto.Certificates.CertificateList
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -458,9 +506,13 @@ public final class CertificateListProtos {
           Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> certificatesBuilder_;
 
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> getCertificatesList() {
+      @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> getCertificatesList() {
         if (certificatesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(certificates_);
         } else {
@@ -468,9 +520,13 @@ public final class CertificateListProtos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public int getCertificatesCount() {
+      @java.lang.Deprecated public int getCertificatesCount() {
         if (certificatesBuilder_ == null) {
           return certificates_.size();
         } else {
@@ -478,9 +534,13 @@ public final class CertificateListProtos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index) {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 getCertificates(int index) {
         if (certificatesBuilder_ == null) {
           return certificates_.get(index);
         } else {
@@ -488,9 +548,13 @@ public final class CertificateListProtos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder setCertificates(
+      @java.lang.Deprecated public Builder setCertificates(
           int index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 value) {
         if (certificatesBuilder_ == null) {
           if (value == null) {
@@ -505,9 +569,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder setCertificates(
+      @java.lang.Deprecated public Builder setCertificates(
           int index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder builderForValue) {
         if (certificatesBuilder_ == null) {
           ensureCertificatesIsMutable();
@@ -519,9 +587,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder addCertificates(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 value) {
+      @java.lang.Deprecated public Builder addCertificates(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 value) {
         if (certificatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -535,9 +607,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder addCertificates(
+      @java.lang.Deprecated public Builder addCertificates(
           int index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2 value) {
         if (certificatesBuilder_ == null) {
           if (value == null) {
@@ -552,9 +628,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder addCertificates(
+      @java.lang.Deprecated public Builder addCertificates(
           Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder builderForValue) {
         if (certificatesBuilder_ == null) {
           ensureCertificatesIsMutable();
@@ -566,9 +646,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder addCertificates(
+      @java.lang.Deprecated public Builder addCertificates(
           int index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder builderForValue) {
         if (certificatesBuilder_ == null) {
           ensureCertificatesIsMutable();
@@ -580,9 +664,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder addAllCertificates(
+      @java.lang.Deprecated public Builder addAllCertificates(
           java.lang.Iterable<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2> values) {
         if (certificatesBuilder_ == null) {
           ensureCertificatesIsMutable();
@@ -595,9 +683,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder clearCertificates() {
+      @java.lang.Deprecated public Builder clearCertificates() {
         if (certificatesBuilder_ == null) {
           certificates_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -608,9 +700,13 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Builder removeCertificates(int index) {
+      @java.lang.Deprecated public Builder removeCertificates(int index) {
         if (certificatesBuilder_ == null) {
           ensureCertificatesIsMutable();
           certificates_.remove(index);
@@ -621,16 +717,24 @@ public final class CertificateListProtos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder getCertificatesBuilder(
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder getCertificatesBuilder(
           int index) {
         return getCertificatesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder getCertificatesOrBuilder(
           int index) {
         if (certificatesBuilder_ == null) {
           return certificates_.get(index);  } else {
@@ -638,9 +742,13 @@ public final class CertificateListProtos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
+      @java.lang.Deprecated public java.util.List<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2OrBuilder> 
            getCertificatesOrBuilderList() {
         if (certificatesBuilder_ != null) {
           return certificatesBuilder_.getMessageOrBuilderList();
@@ -649,24 +757,36 @@ public final class CertificateListProtos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder addCertificatesBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder addCertificatesBuilder() {
         return getCertificatesFieldBuilder().addBuilder(
             Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.getDefaultInstance());
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder addCertificatesBuilder(
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder addCertificatesBuilder(
           int index) {
         return getCertificatesFieldBuilder().addBuilder(
             index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.getDefaultInstance());
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateInfoV2 Certificates = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+       * </pre>
        */
-      public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder> 
+      @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateInfoV2.Builder> 
            getCertificatesBuilderList() {
         return getCertificatesFieldBuilder().getBuilderList();
       }
@@ -711,10 +831,10 @@ public final class CertificateListProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\025CertificateList.proto\022\020Diadoc.Api.Prot" +
-      "o\032\027CertificateInfoV2.proto\"L\n\017Certificat" +
-      "eList\0229\n\014Certificates\030\001 \003(\0132#.Diadoc.Api" +
-      ".Proto.CertificateInfoV2B\027B\025CertificateL" +
-      "istProtos"
+      "o\032\027CertificateInfoV2.proto\"P\n\017Certificat" +
+      "eList\022=\n\014Certificates\030\001 \003(\0132#.Diadoc.Api" +
+      ".Proto.CertificateInfoV2B\002\030\001B\027B\025Certific" +
+      "ateListProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

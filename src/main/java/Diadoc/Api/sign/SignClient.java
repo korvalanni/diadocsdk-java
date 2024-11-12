@@ -95,6 +95,9 @@ public class SignClient {
         }
     }
 
+    /**
+     * @deprecated Метод устарел
+     */
     public AsyncMethodResult autoSignReceipts(String boxId, @Nullable String certificateThumbprint, @Nullable String batchKey) throws DiadocSdkException {
         if (boxId == null) {
             throw new IllegalArgumentException("boxId");
@@ -122,6 +125,9 @@ public class SignClient {
         }
     }
 
+    /**
+     * @deprecated Метод устарел
+     */
     public AutosignReceiptsResult waitAutosignReceiptsResult(String taskId, Integer timeoutInMillis)
             throws DiadocSdkException {
         try {
