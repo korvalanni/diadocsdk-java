@@ -3,6 +3,11 @@
 
 package Diadoc.Api.Proto.Users;
 
+@Deprecated
+/**
+ * Класс устарел и будет удален из API 07 апреля 2025.
+ * Подробная информация <a href="https://developer.kontur.ru/docs/diadoc-api/proto/removal/UserToUpdate.html"> по удалению UserToUpdate</a>
+ */
 public final class UserToUpdateProtos {
   private UserToUpdateProtos() {}
   public static void registerAllExtensions(
@@ -13,33 +18,61 @@ public final class UserToUpdateProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    boolean hasLogin();
+    @java.lang.Deprecated boolean hasLogin();
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin();
+    @java.lang.Deprecated Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin();
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder();
+    @java.lang.Deprecated Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder();
 
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    boolean hasFullName();
+    @java.lang.Deprecated boolean hasFullName();
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName();
+    @java.lang.Deprecated Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName();
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder();
+    @java.lang.Deprecated Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Users.UserToUpdate}
+   *
+   * <pre>
+   * Структура устарела и будет удалена из API 06 января 2025.
+   * </pre>
    */
   public static final class UserToUpdate extends
       com.google.protobuf.GeneratedMessage implements
@@ -159,42 +192,66 @@ public final class UserToUpdateProtos {
     public static final int LOGIN_FIELD_NUMBER = 1;
     private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch login_;
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public boolean hasLogin() {
+    @java.lang.Deprecated public boolean hasLogin() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
       return login_;
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
       return login_;
     }
 
     public static final int FULLNAME_FIELD_NUMBER = 2;
     private Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch fullName_;
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public boolean hasFullName() {
+    @java.lang.Deprecated public boolean hasFullName() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
       return fullName_;
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+     * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
       return fullName_;
     }
 
@@ -324,6 +381,10 @@ public final class UserToUpdateProtos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.Users.UserToUpdate}
+     *
+     * <pre>
+     * Структура устарела и будет удалена из API 06 января 2025.
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -478,15 +539,23 @@ public final class UserToUpdateProtos {
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder> loginBuilder_;
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public boolean hasLogin() {
+      @java.lang.Deprecated public boolean hasLogin() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch getLogin() {
         if (loginBuilder_ == null) {
           return login_;
         } else {
@@ -494,9 +563,13 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
+      @java.lang.Deprecated public Builder setLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
         if (loginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -510,9 +583,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setLogin(
+      @java.lang.Deprecated public Builder setLogin(
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder builderForValue) {
         if (loginBuilder_ == null) {
           login_ = builderForValue.build();
@@ -524,9 +601,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder mergeLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
+      @java.lang.Deprecated public Builder mergeLogin(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch value) {
         if (loginBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
               login_ != Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance()) {
@@ -543,9 +624,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder clearLogin() {
+      @java.lang.Deprecated public Builder clearLogin() {
         if (loginBuilder_ == null) {
           login_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.getDefaultInstance();
           onChanged();
@@ -556,17 +641,25 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder getLoginBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder getLoginBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getLoginFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder getLoginOrBuilder() {
         if (loginBuilder_ != null) {
           return loginBuilder_.getMessageOrBuilder();
         } else {
@@ -574,7 +667,11 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserLoginPatch Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserLoginPatchOrBuilder> 
@@ -594,15 +691,23 @@ public final class UserToUpdateProtos {
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder> fullNameBuilder_;
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public boolean hasFullName() {
+      @java.lang.Deprecated public boolean hasFullName() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch getFullName() {
         if (fullNameBuilder_ == null) {
           return fullName_;
         } else {
@@ -610,9 +715,13 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
+      @java.lang.Deprecated public Builder setFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
         if (fullNameBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -626,9 +735,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setFullName(
+      @java.lang.Deprecated public Builder setFullName(
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder builderForValue) {
         if (fullNameBuilder_ == null) {
           fullName_ = builderForValue.build();
@@ -640,9 +753,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder mergeFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
+      @java.lang.Deprecated public Builder mergeFullName(Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch value) {
         if (fullNameBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
               fullName_ != Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance()) {
@@ -659,9 +776,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder clearFullName() {
+      @java.lang.Deprecated public Builder clearFullName() {
         if (fullNameBuilder_ == null) {
           fullName_ = Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.getDefaultInstance();
           onChanged();
@@ -672,17 +793,25 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder getFullNameBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder getFullNameBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getFullNameFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder getFullNameOrBuilder() {
         if (fullNameBuilder_ != null) {
           return fullNameBuilder_.getMessageOrBuilder();
         } else {
@@ -690,7 +819,11 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2;</code>
+       * <code>optional .Diadoc.Api.Proto.Users.UserFullNamePatch FullName = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatch.Builder, Diadoc.Api.Proto.Users.UserToUpdateProtos.UserFullNamePatchOrBuilder> 
@@ -722,21 +855,37 @@ public final class UserToUpdateProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    boolean hasLogin();
+    @java.lang.Deprecated boolean hasLogin();
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    java.lang.String getLogin();
+    @java.lang.Deprecated java.lang.String getLogin();
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getLoginBytes();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Users.UserLoginPatch}
+   *
+   * <pre>
+   * Структура UserLoginPatch устарела и будет удалена из API06 января 2025.
+   * </pre>
    */
   public static final class UserLoginPatch extends
       com.google.protobuf.GeneratedMessage implements
@@ -836,15 +985,23 @@ public final class UserToUpdateProtos {
     public static final int LOGIN_FIELD_NUMBER = 1;
     private java.lang.Object login_;
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public boolean hasLogin() {
+    @java.lang.Deprecated public boolean hasLogin() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public java.lang.String getLogin() {
+    @java.lang.Deprecated public java.lang.String getLogin() {
       java.lang.Object ref = login_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -859,9 +1016,13 @@ public final class UserToUpdateProtos {
       }
     }
     /**
-     * <code>optional string Login = 1;</code>
+     * <code>optional string Login = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getLoginBytes() {
       java.lang.Object ref = login_;
       if (ref instanceof java.lang.String) {
@@ -987,6 +1148,10 @@ public final class UserToUpdateProtos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.Users.UserLoginPatch}
+     *
+     * <pre>
+     * Структура UserLoginPatch устарела и будет удалена из API06 января 2025.
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -1108,15 +1273,23 @@ public final class UserToUpdateProtos {
 
       private java.lang.Object login_ = "";
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public boolean hasLogin() {
+      @java.lang.Deprecated public boolean hasLogin() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public java.lang.String getLogin() {
+      @java.lang.Deprecated public java.lang.String getLogin() {
         java.lang.Object ref = login_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -1131,9 +1304,13 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getLoginBytes() {
         java.lang.Object ref = login_;
         if (ref instanceof String) {
@@ -1147,9 +1324,13 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setLogin(
+      @java.lang.Deprecated public Builder setLogin(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1160,18 +1341,26 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder clearLogin() {
+      @java.lang.Deprecated public Builder clearLogin() {
         bitField0_ = (bitField0_ & ~0x00000001);
         login_ = getDefaultInstance().getLogin();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string Login = 1;</code>
+       * <code>optional string Login = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setLoginBytes(
+      @java.lang.Deprecated public Builder setLoginBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1198,20 +1387,36 @@ public final class UserToUpdateProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    boolean hasFullName();
+    @java.lang.Deprecated boolean hasFullName();
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.UserProtos.FullName getFullName();
+    @java.lang.Deprecated Diadoc.Api.Proto.UserProtos.FullName getFullName();
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder();
+    @java.lang.Deprecated Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.Users.UserFullNamePatch}
+   *
+   * <pre>
+   * Структура UserFullNamePatch устарела и будет удалена из API 06 января 2025.
+   * </pre>
    */
   public static final class UserFullNamePatch extends
       com.google.protobuf.GeneratedMessage implements
@@ -1318,21 +1523,33 @@ public final class UserToUpdateProtos {
     public static final int FULLNAME_FIELD_NUMBER = 1;
     private Diadoc.Api.Proto.UserProtos.FullName fullName_;
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public boolean hasFullName() {
+    @java.lang.Deprecated public boolean hasFullName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.UserProtos.FullName getFullName() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.UserProtos.FullName getFullName() {
       return fullName_;
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+     * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 06 января 2025.
+     * </pre>
      */
-    public Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder() {
       return fullName_;
     }
 
@@ -1454,6 +1671,10 @@ public final class UserToUpdateProtos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.Users.UserFullNamePatch}
+     *
+     * <pre>
+     * Структура UserFullNamePatch устарела и будет удалена из API 06 января 2025.
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -1590,15 +1811,23 @@ public final class UserToUpdateProtos {
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.UserProtos.FullName, Diadoc.Api.Proto.UserProtos.FullName.Builder, Diadoc.Api.Proto.UserProtos.FullNameOrBuilder> fullNameBuilder_;
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public boolean hasFullName() {
+      @java.lang.Deprecated public boolean hasFullName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.UserProtos.FullName getFullName() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.UserProtos.FullName getFullName() {
         if (fullNameBuilder_ == null) {
           return fullName_;
         } else {
@@ -1606,9 +1835,13 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setFullName(Diadoc.Api.Proto.UserProtos.FullName value) {
+      @java.lang.Deprecated public Builder setFullName(Diadoc.Api.Proto.UserProtos.FullName value) {
         if (fullNameBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1622,9 +1855,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder setFullName(
+      @java.lang.Deprecated public Builder setFullName(
           Diadoc.Api.Proto.UserProtos.FullName.Builder builderForValue) {
         if (fullNameBuilder_ == null) {
           fullName_ = builderForValue.build();
@@ -1636,9 +1873,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder mergeFullName(Diadoc.Api.Proto.UserProtos.FullName value) {
+      @java.lang.Deprecated public Builder mergeFullName(Diadoc.Api.Proto.UserProtos.FullName value) {
         if (fullNameBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
               fullName_ != Diadoc.Api.Proto.UserProtos.FullName.getDefaultInstance()) {
@@ -1655,9 +1896,13 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Builder clearFullName() {
+      @java.lang.Deprecated public Builder clearFullName() {
         if (fullNameBuilder_ == null) {
           fullName_ = Diadoc.Api.Proto.UserProtos.FullName.getDefaultInstance();
           onChanged();
@@ -1668,17 +1913,25 @@ public final class UserToUpdateProtos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.UserProtos.FullName.Builder getFullNameBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.UserProtos.FullName.Builder getFullNameBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getFullNameFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
-      public Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.UserProtos.FullNameOrBuilder getFullNameOrBuilder() {
         if (fullNameBuilder_ != null) {
           return fullNameBuilder_.getMessageOrBuilder();
         } else {
@@ -1686,7 +1939,11 @@ public final class UserToUpdateProtos {
         }
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1;</code>
+       * <code>optional .Diadoc.Api.Proto.FullName FullName = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 06 января 2025.
+       * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
           Diadoc.Api.Proto.UserProtos.FullName, Diadoc.Api.Proto.UserProtos.FullName.Builder, Diadoc.Api.Proto.UserProtos.FullNameOrBuilder> 
@@ -1738,13 +1995,14 @@ public final class UserToUpdateProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\030Users/UserToUpdate.proto\022\026Diadoc.Api.P" +
-      "roto.Users\032\nUser.proto\"\202\001\n\014UserToUpdate\022" +
-      "5\n\005Login\030\001 \001(\0132&.Diadoc.Api.Proto.Users." +
-      "UserLoginPatch\022;\n\010FullName\030\002 \001(\0132).Diado" +
-      "c.Api.Proto.Users.UserFullNamePatch\"\037\n\016U" +
-      "serLoginPatch\022\r\n\005Login\030\001 \001(\t\"A\n\021UserFull" +
-      "NamePatch\022,\n\010FullName\030\001 \001(\0132\032.Diadoc.Api" +
-      ".Proto.FullNameB\024B\022UserToUpdateProtos"
+      "roto.Users\032\nUser.proto\"\212\001\n\014UserToUpdate\022" +
+      "9\n\005Login\030\001 \001(\0132&.Diadoc.Api.Proto.Users." +
+      "UserLoginPatchB\002\030\001\022?\n\010FullName\030\002 \001(\0132).D" +
+      "iadoc.Api.Proto.Users.UserFullNamePatchB" +
+      "\002\030\001\"#\n\016UserLoginPatch\022\021\n\005Login\030\001 \001(\tB\002\030\001" +
+      "\"E\n\021UserFullNamePatch\0220\n\010FullName\030\001 \001(\0132" +
+      "\032.Diadoc.Api.Proto.FullNameB\002\030\001B\024B\022UserT" +
+      "oUpdateProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

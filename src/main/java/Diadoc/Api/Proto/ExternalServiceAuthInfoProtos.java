@@ -3,6 +3,11 @@
 
 package Diadoc.Api.Proto;
 
+@Deprecated
+/**
+ * Класс устарел и будет удален из API 07 апреля 2025.
+ * Подробная информация <a href="https://developer.kontur.ru/docs/diadoc-api/proto/removal/ExternalServiceAuthInfo.html"> по удалению ExternalServiceAuthInfo</a>
+ */
 public final class ExternalServiceAuthInfoProtos {
   private ExternalServiceAuthInfoProtos() {}
   public static void registerAllExtensions(
@@ -13,35 +18,63 @@ public final class ExternalServiceAuthInfoProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    boolean hasServiceUserId();
+    @java.lang.Deprecated boolean hasServiceUserId();
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    java.lang.String getServiceUserId();
+    @java.lang.Deprecated java.lang.String getServiceUserId();
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getServiceUserIdBytes();
 
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    boolean hasThumbprint();
+    @java.lang.Deprecated boolean hasThumbprint();
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    java.lang.String getThumbprint();
+    @java.lang.Deprecated java.lang.String getThumbprint();
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getThumbprintBytes();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.ExternalServiceAuthInfo}
+   *
+   * <pre>
+   * Структура устарела и будет удалена из API 07 апреля 2025.
+   * </pre>
    */
   public static final class ExternalServiceAuthInfo extends
       com.google.protobuf.GeneratedMessage implements
@@ -147,15 +180,23 @@ public final class ExternalServiceAuthInfoProtos {
     public static final int SERVICEUSERID_FIELD_NUMBER = 1;
     private java.lang.Object serviceUserId_;
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public boolean hasServiceUserId() {
+    @java.lang.Deprecated public boolean hasServiceUserId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public java.lang.String getServiceUserId() {
+    @java.lang.Deprecated public java.lang.String getServiceUserId() {
       java.lang.Object ref = serviceUserId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -170,9 +211,13 @@ public final class ExternalServiceAuthInfoProtos {
       }
     }
     /**
-     * <code>optional string ServiceUserId = 1;</code>
+     * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getServiceUserIdBytes() {
       java.lang.Object ref = serviceUserId_;
       if (ref instanceof java.lang.String) {
@@ -189,15 +234,23 @@ public final class ExternalServiceAuthInfoProtos {
     public static final int THUMBPRINT_FIELD_NUMBER = 2;
     private java.lang.Object thumbprint_;
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public boolean hasThumbprint() {
+    @java.lang.Deprecated public boolean hasThumbprint() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public java.lang.String getThumbprint() {
+    @java.lang.Deprecated public java.lang.String getThumbprint() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -212,9 +265,13 @@ public final class ExternalServiceAuthInfoProtos {
       }
     }
     /**
-     * <code>optional string Thumbprint = 2;</code>
+     * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Это поле будет удалено из API 07 апреля 2025.
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getThumbprintBytes() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
@@ -348,6 +405,10 @@ public final class ExternalServiceAuthInfoProtos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.ExternalServiceAuthInfo}
+     *
+     * <pre>
+     * Структура устарела и будет удалена из API 07 апреля 2025.
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -480,15 +541,23 @@ public final class ExternalServiceAuthInfoProtos {
 
       private java.lang.Object serviceUserId_ = "";
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public boolean hasServiceUserId() {
+      @java.lang.Deprecated public boolean hasServiceUserId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public java.lang.String getServiceUserId() {
+      @java.lang.Deprecated public java.lang.String getServiceUserId() {
         java.lang.Object ref = serviceUserId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -503,9 +572,13 @@ public final class ExternalServiceAuthInfoProtos {
         }
       }
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getServiceUserIdBytes() {
         java.lang.Object ref = serviceUserId_;
         if (ref instanceof String) {
@@ -519,9 +592,13 @@ public final class ExternalServiceAuthInfoProtos {
         }
       }
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder setServiceUserId(
+      @java.lang.Deprecated public Builder setServiceUserId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -532,18 +609,26 @@ public final class ExternalServiceAuthInfoProtos {
         return this;
       }
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder clearServiceUserId() {
+      @java.lang.Deprecated public Builder clearServiceUserId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         serviceUserId_ = getDefaultInstance().getServiceUserId();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string ServiceUserId = 1;</code>
+       * <code>optional string ServiceUserId = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder setServiceUserIdBytes(
+      @java.lang.Deprecated public Builder setServiceUserIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -556,15 +641,23 @@ public final class ExternalServiceAuthInfoProtos {
 
       private java.lang.Object thumbprint_ = "";
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public boolean hasThumbprint() {
+      @java.lang.Deprecated public boolean hasThumbprint() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public java.lang.String getThumbprint() {
+      @java.lang.Deprecated public java.lang.String getThumbprint() {
         java.lang.Object ref = thumbprint_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -579,9 +672,13 @@ public final class ExternalServiceAuthInfoProtos {
         }
       }
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getThumbprintBytes() {
         java.lang.Object ref = thumbprint_;
         if (ref instanceof String) {
@@ -595,9 +692,13 @@ public final class ExternalServiceAuthInfoProtos {
         }
       }
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder setThumbprint(
+      @java.lang.Deprecated public Builder setThumbprint(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -608,18 +709,26 @@ public final class ExternalServiceAuthInfoProtos {
         return this;
       }
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder clearThumbprint() {
+      @java.lang.Deprecated public Builder clearThumbprint() {
         bitField0_ = (bitField0_ & ~0x00000002);
         thumbprint_ = getDefaultInstance().getThumbprint();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string Thumbprint = 2;</code>
+       * <code>optional string Thumbprint = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Это поле будет удалено из API 07 апреля 2025.
+       * </pre>
        */
-      public Builder setThumbprintBytes(
+      @java.lang.Deprecated public Builder setThumbprintBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -656,9 +765,9 @@ public final class ExternalServiceAuthInfoProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\035ExternalServiceAuthInfo.proto\022\020Diadoc." +
-      "Api.Proto\"D\n\027ExternalServiceAuthInfo\022\025\n\r" +
-      "ServiceUserId\030\001 \001(\t\022\022\n\nThumbprint\030\002 \001(\tB" +
-      "\037B\035ExternalServiceAuthInfoProtos"
+      "Api.Proto\"L\n\027ExternalServiceAuthInfo\022\031\n\r" +
+      "ServiceUserId\030\001 \001(\tB\002\030\001\022\026\n\nThumbprint\030\002 " +
+      "\001(\tB\002\030\001B\037B\035ExternalServiceAuthInfoProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
