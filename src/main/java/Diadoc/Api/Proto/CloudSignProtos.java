@@ -3,6 +3,10 @@
 
 package Diadoc.Api.Proto;
 
+/**
+ * @deprecated Этот класс устарел и будет удалён в следующей мажорной версии.
+ */
+@Deprecated
 public final class CloudSignProtos {
   private CloudSignProtos() {}
   public static void registerAllExtensions(

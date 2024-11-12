@@ -67,6 +67,12 @@ public class ParseClient {
         }
     }
 
+
+    /**
+     * @deprecated Метод parseAcceptanceCertificateSellerTitleXml устарел.
+     * Используйте метод {@link Diadoc.Api.parse.ParseClient#parseTitleXml(String, String, String, String, Integer, byte[])}
+     */
+    @Deprecated
     public AcceptanceCertificateSellerTitleInfo parseAcceptanceCertificateSellerTitleXml(byte[] sellerTitleXmlContent) throws DiadocSdkException {
         try {
             return AcceptanceCertificateSellerTitleInfo.parseFrom(parseXml(
@@ -78,6 +84,10 @@ public class ParseClient {
         }
     }
 
+    /**
+     * @deprecated Метод parseAcceptanceCertificateSellerTitleXml устарел.
+     * Используйте метод {@link Diadoc.Api.parse.ParseClient#parseTitleXml(String, String, String, String, Integer, byte[])}
+     */
     public AcceptanceCertificateBuyerTitleInfo parseAcceptanceCertificateBuyerTitleXml(byte[] buyerTitleXmlContent) throws DiadocSdkException {
         try {
             return AcceptanceCertificateBuyerTitleInfo.parseFrom(parseXml(
@@ -89,6 +99,10 @@ public class ParseClient {
         }
     }
 
+    /**
+     * @deprecated Метод parseAcceptanceCertificateSellerTitleXml устарел.
+     * Используйте метод {@link Diadoc.Api.parse.ParseClient#parseTitleXml(String, String, String, String, Integer, byte[])}
+     */
     public AcceptanceCertificate552SellerTitleInfo parseAcceptanceCertificate552SellerTitleXml(byte[] sellerTitleXmlContent) throws DiadocSdkException {
         try {
             return AcceptanceCertificate552SellerTitleInfo.parseFrom(parseXml(

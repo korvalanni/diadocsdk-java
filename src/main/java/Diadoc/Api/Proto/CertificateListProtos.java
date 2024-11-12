@@ -3,6 +3,11 @@
 
 package Diadoc.Api.Proto;
 
+/**
+ * @deprecated Этот класс устарел и будет удалён в будущих версиях.
+ * Используйте {@link Diadoc.Api.Proto.Certificates.CertificateListProtos} вместо этого.
+ */
+@Deprecated
 public final class CertificateListProtos {
   private CertificateListProtos() {}
   public static void registerAllExtensions(
