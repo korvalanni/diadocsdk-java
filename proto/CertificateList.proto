@@ -1,6 +1,8 @@
 import "CertificateInfoV2.proto";
 package Diadoc.Api.Proto;
 
+// Устарело. Используйте вместо этого Diadoc.Api.Proto.Certificates.CertificateList
 message CertificateList {
-	repeated CertificateInfoV2 Certificates = 1;
+	// Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateList.Certificates вместо этого
+	repeated CertificateInfoV2 Certificates = 1 [deprecated = true];
 }

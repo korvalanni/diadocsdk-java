@@ -2,18 +2,23 @@ import "User.proto";
 
 package Diadoc.Api.Proto.Users;
 
-message UserToUpdate
-{
-	optional UserLoginPatch Login = 1;
-	optional UserFullNamePatch FullName = 2;
+// Структура устарела и будет удалена из API 06 января 2025.
+message UserToUpdate {
+	// Устарело. Это поле будет удалено из API 06 января 2025.
+	optional UserLoginPatch Login = 1 [deprecated = true];
+
+	// Устарело. Это поле будет удалено из API 06 января 2025.
+	optional UserFullNamePatch FullName = 2 [deprecated = true];
 }
 
-message UserLoginPatch
-{
-	optional string Login = 1;
+// Структура UserLoginPatch устарела и будет удалена из API06 января 2025.
+message UserLoginPatch {
+	// Устарело. Это поле будет удалено из API 06 января 2025.
+	optional string Login = 1 [deprecated = true];
 }
 
-message UserFullNamePatch
-{
-	optional FullName FullName = 1;
+// Структура UserFullNamePatch устарела и будет удалена из API 06 января 2025.
+message UserFullNamePatch {
+	// Устарело. Это поле будет удалено из API 06 января 2025.
+	optional FullName FullName = 1 [deprecated = true];
 }

@@ -12,8 +12,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 
 import static Diadoc.Api.Proto.Events.DiadocMessage_GetApiProtos.*;
 import static Diadoc.Api.Proto.Events.DiadocMessage_PostApiProtos.*;
@@ -58,9 +56,9 @@ public class TemplateClient {
     }
 
     /**
-     * Use getMessage from message client instead
+     * @deprecated Метод устарел.
+     * Используйте {@link Diadoc.Api.message.MessageClient#getMessage(String, String)}
      */
-
     @Deprecated
     public Template getTemplate(String currentBoxId, String templateId, @Nullable String entityId) throws DiadocSdkException {
         if (currentBoxId == null) {

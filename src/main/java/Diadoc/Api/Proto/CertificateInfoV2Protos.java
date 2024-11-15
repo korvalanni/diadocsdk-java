@@ -3,6 +3,11 @@
 
 package Diadoc.Api.Proto;
 
+/**
+ * @deprecated Этот класс устарел и будет удалён в будущих версиях.
+ * Используйте {@link Diadoc.Api.Proto.Certificates.CertificateInfoV2Protos} вместо этого.
+ */
+@Deprecated
 public final class CertificateInfoV2Protos {
   private CertificateInfoV2Protos() {}
   public static void registerAllExtensions(
@@ -10,41 +15,49 @@ public final class CertificateInfoV2Protos {
   }
   /**
    * Protobuf enum {@code Diadoc.Api.Proto.CertificateType}
+   *
+   * <pre>
+   * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateType вместо этого
+   * </pre>
    */
   public enum CertificateType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownCertificateType = 0;</code>
+     * <code>UnknownCertificateType = 0 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     UnknownCertificateType(0, 0),
     /**
-     * <code>TokenCertificateType = 1;</code>
+     * <code>TokenCertificateType = 1 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     TokenCertificateType(1, 1),
     /**
-     * <code>DssCertificateType = 2;</code>
+     * <code>DssCertificateType = 2 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     DssCertificateType(2, 2),
     /**
-     * <code>KonturCertificateType = 3;</code>
+     * <code>KonturCertificateType = 3 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     KonturCertificateType(3, 3),
     ;
 
     /**
-     * <code>UnknownCertificateType = 0;</code>
+     * <code>UnknownCertificateType = 0 [deprecated = true];</code>
      */
     public static final int UnknownCertificateType_VALUE = 0;
     /**
-     * <code>TokenCertificateType = 1;</code>
+     * <code>TokenCertificateType = 1 [deprecated = true];</code>
      */
     public static final int TokenCertificateType_VALUE = 1;
     /**
-     * <code>DssCertificateType = 2;</code>
+     * <code>DssCertificateType = 2 [deprecated = true];</code>
      */
     public static final int DssCertificateType_VALUE = 2;
     /**
-     * <code>KonturCertificateType = 3;</code>
+     * <code>KonturCertificateType = 3 [deprecated = true];</code>
      */
     public static final int KonturCertificateType_VALUE = 3;
 
@@ -110,41 +123,49 @@ public final class CertificateInfoV2Protos {
 
   /**
    * Protobuf enum {@code Diadoc.Api.Proto.CertificateSubjectType}
+   *
+   * <pre>
+   * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateSubjectType вместо этого
+   * </pre>
    */
   public enum CertificateSubjectType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownCertificateSubjectType = 0;</code>
+     * <code>UnknownCertificateSubjectType = 0 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     UnknownCertificateSubjectType(0, 0),
     /**
-     * <code>LegalEntity = 1;</code>
+     * <code>LegalEntity = 1 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     LegalEntity(1, 1),
     /**
-     * <code>IndividualEntity = 2;</code>
+     * <code>IndividualEntity = 2 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     IndividualEntity(2, 2),
     /**
-     * <code>PhysicalPerson = 3;</code>
+     * <code>PhysicalPerson = 3 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     PhysicalPerson(3, 3),
     ;
 
     /**
-     * <code>UnknownCertificateSubjectType = 0;</code>
+     * <code>UnknownCertificateSubjectType = 0 [deprecated = true];</code>
      */
     public static final int UnknownCertificateSubjectType_VALUE = 0;
     /**
-     * <code>LegalEntity = 1;</code>
+     * <code>LegalEntity = 1 [deprecated = true];</code>
      */
     public static final int LegalEntity_VALUE = 1;
     /**
-     * <code>IndividualEntity = 2;</code>
+     * <code>IndividualEntity = 2 [deprecated = true];</code>
      */
     public static final int IndividualEntity_VALUE = 2;
     /**
-     * <code>PhysicalPerson = 3;</code>
+     * <code>PhysicalPerson = 3 [deprecated = true];</code>
      */
     public static final int PhysicalPerson_VALUE = 3;
 
@@ -210,49 +231,58 @@ public final class CertificateInfoV2Protos {
 
   /**
    * Protobuf enum {@code Diadoc.Api.Proto.DssType}
+   *
+   * <pre>
+   * Устарело. Используйте Diadoc.Api.Proto.Certificates.DssCertificateType вместо этого
+   * </pre>
    */
   public enum DssType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownDssType = 0;</code>
+     * <code>UnknownDssType = 0 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     UnknownDssType(0, 0),
     /**
-     * <code>MyDss = 1;</code>
+     * <code>MyDss = 1 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     MyDss(1, 1),
     /**
-     * <code>KSignServer = 2;</code>
+     * <code>KSignServer = 2 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     KSignServer(2, 2),
     /**
-     * <code>KSignRutoken = 3;</code>
+     * <code>KSignRutoken = 3 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     KSignRutoken(3, 3),
     /**
-     * <code>KSignMobile = 4;</code>
+     * <code>KSignMobile = 4 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     KSignMobile(4, 4),
     ;
 
     /**
-     * <code>UnknownDssType = 0;</code>
+     * <code>UnknownDssType = 0 [deprecated = true];</code>
      */
     public static final int UnknownDssType_VALUE = 0;
     /**
-     * <code>MyDss = 1;</code>
+     * <code>MyDss = 1 [deprecated = true];</code>
      */
     public static final int MyDss_VALUE = 1;
     /**
-     * <code>KSignServer = 2;</code>
+     * <code>KSignServer = 2 [deprecated = true];</code>
      */
     public static final int KSignServer_VALUE = 2;
     /**
-     * <code>KSignRutoken = 3;</code>
+     * <code>KSignRutoken = 3 [deprecated = true];</code>
      */
     public static final int KSignRutoken_VALUE = 3;
     /**
-     * <code>KSignMobile = 4;</code>
+     * <code>KSignMobile = 4 [deprecated = true];</code>
      */
     public static final int KSignMobile_VALUE = 4;
 
@@ -319,41 +349,49 @@ public final class CertificateInfoV2Protos {
 
   /**
    * Protobuf enum {@code Diadoc.Api.Proto.CertificateUsage}
+   *
+   * <pre>
+   * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateUsage вместо этого
+   * </pre>
    */
   public enum CertificateUsage
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>UnknownUsage = 0;</code>
+     * <code>UnknownUsage = 0 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     UnknownUsage(0, 0),
     /**
-     * <code>KonturCertificateUsage = 1;</code>
+     * <code>KonturCertificateUsage = 1 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     KonturCertificateUsage(1, 1),
     /**
-     * <code>TokenUsage = 2;</code>
+     * <code>TokenUsage = 2 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     TokenUsage(2, 2),
     /**
-     * <code>DssUsage = 3;</code>
+     * <code>DssUsage = 3 [deprecated = true];</code>
      */
+    @java.lang.Deprecated
     DssUsage(3, 3),
     ;
 
     /**
-     * <code>UnknownUsage = 0;</code>
+     * <code>UnknownUsage = 0 [deprecated = true];</code>
      */
     public static final int UnknownUsage_VALUE = 0;
     /**
-     * <code>KonturCertificateUsage = 1;</code>
+     * <code>KonturCertificateUsage = 1 [deprecated = true];</code>
      */
     public static final int KonturCertificateUsage_VALUE = 1;
     /**
-     * <code>TokenUsage = 2;</code>
+     * <code>TokenUsage = 2 [deprecated = true];</code>
      */
     public static final int TokenUsage_VALUE = 2;
     /**
-     * <code>DssUsage = 3;</code>
+     * <code>DssUsage = 3 [deprecated = true];</code>
      */
     public static final int DssUsage_VALUE = 3;
 
@@ -422,190 +460,354 @@ public final class CertificateInfoV2Protos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    boolean hasThumbprint();
+    @java.lang.Deprecated boolean hasThumbprint();
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    java.lang.String getThumbprint();
+    @java.lang.Deprecated java.lang.String getThumbprint();
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getThumbprintBytes();
 
     /**
-     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+     * </pre>
      */
-    boolean hasType();
+    @java.lang.Deprecated boolean hasType();
     /**
-     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType();
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType();
 
     /**
-     * <code>optional sfixed64 ValidFrom = 3;</code>
+     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+     * </pre>
      */
-    boolean hasValidFrom();
+    @java.lang.Deprecated boolean hasValidFrom();
     /**
-     * <code>optional sfixed64 ValidFrom = 3;</code>
+     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+     * </pre>
      */
-    long getValidFrom();
+    @java.lang.Deprecated long getValidFrom();
 
     /**
-     * <code>optional sfixed64 ValidTo = 4;</code>
+     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+     * </pre>
      */
-    boolean hasValidTo();
+    @java.lang.Deprecated boolean hasValidTo();
     /**
-     * <code>optional sfixed64 ValidTo = 4;</code>
+     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+     * </pre>
      */
-    long getValidTo();
+    @java.lang.Deprecated long getValidTo();
 
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+     * </pre>
      */
-    boolean hasPrivateKeyValidFrom();
+    @java.lang.Deprecated boolean hasPrivateKeyValidFrom();
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+     * </pre>
      */
-    long getPrivateKeyValidFrom();
+    @java.lang.Deprecated long getPrivateKeyValidFrom();
 
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+     * </pre>
      */
-    boolean hasPrivateKeyValidTo();
+    @java.lang.Deprecated boolean hasPrivateKeyValidTo();
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+     * </pre>
      */
-    long getPrivateKeyValidTo();
+    @java.lang.Deprecated long getPrivateKeyValidTo();
 
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    boolean hasOrganizationName();
+    @java.lang.Deprecated boolean hasOrganizationName();
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    java.lang.String getOrganizationName();
+    @java.lang.Deprecated java.lang.String getOrganizationName();
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getOrganizationNameBytes();
 
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    boolean hasInn();
+    @java.lang.Deprecated boolean hasInn();
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    java.lang.String getInn();
+    @java.lang.Deprecated java.lang.String getInn();
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getInnBytes();
 
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    boolean hasUserFirstName();
+    @java.lang.Deprecated boolean hasUserFirstName();
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    java.lang.String getUserFirstName();
+    @java.lang.Deprecated java.lang.String getUserFirstName();
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getUserFirstNameBytes();
 
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    boolean hasUserMiddleName();
+    @java.lang.Deprecated boolean hasUserMiddleName();
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    java.lang.String getUserMiddleName();
+    @java.lang.Deprecated java.lang.String getUserMiddleName();
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getUserMiddleNameBytes();
 
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    boolean hasUserLastName();
+    @java.lang.Deprecated boolean hasUserLastName();
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    java.lang.String getUserLastName();
+    @java.lang.Deprecated java.lang.String getUserLastName();
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getUserLastNameBytes();
 
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    boolean hasUserShortName();
+    @java.lang.Deprecated boolean hasUserShortName();
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    java.lang.String getUserShortName();
+    @java.lang.Deprecated java.lang.String getUserShortName();
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    com.google.protobuf.ByteString
+    @java.lang.Deprecated com.google.protobuf.ByteString
         getUserShortNameBytes();
 
     /**
-     * <code>optional bool IsDefault = 13;</code>
+     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+     * </pre>
      */
-    boolean hasIsDefault();
+    @java.lang.Deprecated boolean hasIsDefault();
     /**
-     * <code>optional bool IsDefault = 13;</code>
+     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+     * </pre>
      */
-    boolean getIsDefault();
+    @java.lang.Deprecated boolean getIsDefault();
 
     /**
-     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+     * </pre>
      */
-    boolean hasSubjectType();
+    @java.lang.Deprecated boolean hasSubjectType();
     /**
-     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType();
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType();
 
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList();
+    @java.lang.Deprecated java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList();
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    int getUsagesCount();
+    @java.lang.Deprecated int getUsagesCount();
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index);
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index);
 
     /**
-     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+     * </pre>
      */
-    boolean hasDssType();
+    @java.lang.Deprecated boolean hasDssType();
     /**
-     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+     * </pre>
      */
-    Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType();
+    @java.lang.Deprecated Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType();
   }
   /**
    * Protobuf type {@code Diadoc.Api.Proto.CertificateInfoV2}
+   *
+   * <pre>
+   * Устарело. Используйте вместо этого Diadoc.Api.Proto.Certificates.CertificateInfoV2
+   * </pre>
    */
   public static final class CertificateInfoV2 extends
       com.google.protobuf.GeneratedMessage implements
@@ -835,15 +1037,23 @@ public final class CertificateInfoV2Protos {
     public static final int THUMBPRINT_FIELD_NUMBER = 1;
     private java.lang.Object thumbprint_;
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    public boolean hasThumbprint() {
+    @java.lang.Deprecated public boolean hasThumbprint() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    public java.lang.String getThumbprint() {
+    @java.lang.Deprecated public java.lang.String getThumbprint() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -858,9 +1068,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>required string Thumbprint = 1;</code>
+     * <code>required string Thumbprint = 1 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getThumbprintBytes() {
       java.lang.Object ref = thumbprint_;
       if (ref instanceof java.lang.String) {
@@ -877,90 +1091,138 @@ public final class CertificateInfoV2Protos {
     public static final int TYPE_FIELD_NUMBER = 2;
     private Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType type_;
     /**
-     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+     * </pre>
      */
-    public boolean hasType() {
+    @java.lang.Deprecated public boolean hasType() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+     * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType() {
       return type_;
     }
 
     public static final int VALIDFROM_FIELD_NUMBER = 3;
     private long validFrom_;
     /**
-     * <code>optional sfixed64 ValidFrom = 3;</code>
+     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+     * </pre>
      */
-    public boolean hasValidFrom() {
+    @java.lang.Deprecated public boolean hasValidFrom() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional sfixed64 ValidFrom = 3;</code>
+     * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+     * </pre>
      */
-    public long getValidFrom() {
+    @java.lang.Deprecated public long getValidFrom() {
       return validFrom_;
     }
 
     public static final int VALIDTO_FIELD_NUMBER = 4;
     private long validTo_;
     /**
-     * <code>optional sfixed64 ValidTo = 4;</code>
+     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+     * </pre>
      */
-    public boolean hasValidTo() {
+    @java.lang.Deprecated public boolean hasValidTo() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>optional sfixed64 ValidTo = 4;</code>
+     * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+     * </pre>
      */
-    public long getValidTo() {
+    @java.lang.Deprecated public long getValidTo() {
       return validTo_;
     }
 
     public static final int PRIVATEKEYVALIDFROM_FIELD_NUMBER = 5;
     private long privateKeyValidFrom_;
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+     * </pre>
      */
-    public boolean hasPrivateKeyValidFrom() {
+    @java.lang.Deprecated public boolean hasPrivateKeyValidFrom() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+     * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+     * </pre>
      */
-    public long getPrivateKeyValidFrom() {
+    @java.lang.Deprecated public long getPrivateKeyValidFrom() {
       return privateKeyValidFrom_;
     }
 
     public static final int PRIVATEKEYVALIDTO_FIELD_NUMBER = 6;
     private long privateKeyValidTo_;
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+     * </pre>
      */
-    public boolean hasPrivateKeyValidTo() {
+    @java.lang.Deprecated public boolean hasPrivateKeyValidTo() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+     * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+     * </pre>
      */
-    public long getPrivateKeyValidTo() {
+    @java.lang.Deprecated public long getPrivateKeyValidTo() {
       return privateKeyValidTo_;
     }
 
     public static final int ORGANIZATIONNAME_FIELD_NUMBER = 7;
     private java.lang.Object organizationName_;
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    public boolean hasOrganizationName() {
+    @java.lang.Deprecated public boolean hasOrganizationName() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    public java.lang.String getOrganizationName() {
+    @java.lang.Deprecated public java.lang.String getOrganizationName() {
       java.lang.Object ref = organizationName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -975,9 +1237,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string OrganizationName = 7;</code>
+     * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getOrganizationNameBytes() {
       java.lang.Object ref = organizationName_;
       if (ref instanceof java.lang.String) {
@@ -994,15 +1260,23 @@ public final class CertificateInfoV2Protos {
     public static final int INN_FIELD_NUMBER = 8;
     private java.lang.Object inn_;
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    public boolean hasInn() {
+    @java.lang.Deprecated public boolean hasInn() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    public java.lang.String getInn() {
+    @java.lang.Deprecated public java.lang.String getInn() {
       java.lang.Object ref = inn_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1017,9 +1291,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string Inn = 8;</code>
+     * <code>optional string Inn = 8 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getInnBytes() {
       java.lang.Object ref = inn_;
       if (ref instanceof java.lang.String) {
@@ -1036,15 +1314,23 @@ public final class CertificateInfoV2Protos {
     public static final int USERFIRSTNAME_FIELD_NUMBER = 9;
     private java.lang.Object userFirstName_;
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    public boolean hasUserFirstName() {
+    @java.lang.Deprecated public boolean hasUserFirstName() {
       return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    public java.lang.String getUserFirstName() {
+    @java.lang.Deprecated public java.lang.String getUserFirstName() {
       java.lang.Object ref = userFirstName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1059,9 +1345,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserFirstName = 9;</code>
+     * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getUserFirstNameBytes() {
       java.lang.Object ref = userFirstName_;
       if (ref instanceof java.lang.String) {
@@ -1078,15 +1368,23 @@ public final class CertificateInfoV2Protos {
     public static final int USERMIDDLENAME_FIELD_NUMBER = 10;
     private java.lang.Object userMiddleName_;
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    public boolean hasUserMiddleName() {
+    @java.lang.Deprecated public boolean hasUserMiddleName() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    public java.lang.String getUserMiddleName() {
+    @java.lang.Deprecated public java.lang.String getUserMiddleName() {
       java.lang.Object ref = userMiddleName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1101,9 +1399,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserMiddleName = 10;</code>
+     * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getUserMiddleNameBytes() {
       java.lang.Object ref = userMiddleName_;
       if (ref instanceof java.lang.String) {
@@ -1120,15 +1422,23 @@ public final class CertificateInfoV2Protos {
     public static final int USERLASTNAME_FIELD_NUMBER = 11;
     private java.lang.Object userLastName_;
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    public boolean hasUserLastName() {
+    @java.lang.Deprecated public boolean hasUserLastName() {
       return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    public java.lang.String getUserLastName() {
+    @java.lang.Deprecated public java.lang.String getUserLastName() {
       java.lang.Object ref = userLastName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1143,9 +1453,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserLastName = 11;</code>
+     * <code>optional string UserLastName = 11 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getUserLastNameBytes() {
       java.lang.Object ref = userLastName_;
       if (ref instanceof java.lang.String) {
@@ -1162,15 +1476,23 @@ public final class CertificateInfoV2Protos {
     public static final int USERSHORTNAME_FIELD_NUMBER = 12;
     private java.lang.Object userShortName_;
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    public boolean hasUserShortName() {
+    @java.lang.Deprecated public boolean hasUserShortName() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    public java.lang.String getUserShortName() {
+    @java.lang.Deprecated public java.lang.String getUserShortName() {
       java.lang.Object ref = userShortName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
@@ -1185,9 +1507,13 @@ public final class CertificateInfoV2Protos {
       }
     }
     /**
-     * <code>optional string UserShortName = 12;</code>
+     * <code>optional string UserShortName = 12 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+     * </pre>
      */
-    public com.google.protobuf.ByteString
+    @java.lang.Deprecated public com.google.protobuf.ByteString
         getUserShortNameBytes() {
       java.lang.Object ref = userShortName_;
       if (ref instanceof java.lang.String) {
@@ -1204,66 +1530,102 @@ public final class CertificateInfoV2Protos {
     public static final int ISDEFAULT_FIELD_NUMBER = 13;
     private boolean isDefault_;
     /**
-     * <code>optional bool IsDefault = 13;</code>
+     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+     * </pre>
      */
-    public boolean hasIsDefault() {
+    @java.lang.Deprecated public boolean hasIsDefault() {
       return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
-     * <code>optional bool IsDefault = 13;</code>
+     * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+     * </pre>
      */
-    public boolean getIsDefault() {
+    @java.lang.Deprecated public boolean getIsDefault() {
       return isDefault_;
     }
 
     public static final int SUBJECTTYPE_FIELD_NUMBER = 14;
     private Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType subjectType_;
     /**
-     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+     * </pre>
      */
-    public boolean hasSubjectType() {
+    @java.lang.Deprecated public boolean hasSubjectType() {
       return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+     * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
       return subjectType_;
     }
 
     public static final int USAGES_FIELD_NUMBER = 15;
     private java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> usages_;
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
+    @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
       return usages_;
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    public int getUsagesCount() {
+    @java.lang.Deprecated public int getUsagesCount() {
       return usages_.size();
     }
     /**
-     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+     * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
       return usages_.get(index);
     }
 
     public static final int DSSTYPE_FIELD_NUMBER = 16;
     private Diadoc.Api.Proto.CertificateInfoV2Protos.DssType dssType_;
     /**
-     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+     * </pre>
      */
-    public boolean hasDssType() {
+    @java.lang.Deprecated public boolean hasDssType() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
-     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+     * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+     *
+     * <pre>
+     * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+     * </pre>
      */
-    public Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType() {
+    @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType() {
       return dssType_;
     }
 
@@ -1512,6 +1874,10 @@ public final class CertificateInfoV2Protos {
     }
     /**
      * Protobuf type {@code Diadoc.Api.Proto.CertificateInfoV2}
+     *
+     * <pre>
+     * Устарело. Используйте вместо этого Diadoc.Api.Proto.Certificates.CertificateInfoV2
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
@@ -1796,15 +2162,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object thumbprint_ = "";
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public boolean hasThumbprint() {
+      @java.lang.Deprecated public boolean hasThumbprint() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public java.lang.String getThumbprint() {
+      @java.lang.Deprecated public java.lang.String getThumbprint() {
         java.lang.Object ref = thumbprint_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -1819,9 +2193,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getThumbprintBytes() {
         java.lang.Object ref = thumbprint_;
         if (ref instanceof String) {
@@ -1835,9 +2213,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public Builder setThumbprint(
+      @java.lang.Deprecated public Builder setThumbprint(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1848,18 +2230,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public Builder clearThumbprint() {
+      @java.lang.Deprecated public Builder clearThumbprint() {
         bitField0_ = (bitField0_ & ~0x00000001);
         thumbprint_ = getDefaultInstance().getThumbprint();
         onChanged();
         return this;
       }
       /**
-       * <code>required string Thumbprint = 1;</code>
+       * <code>required string Thumbprint = 1 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Thumbprint вместо этого
+       * </pre>
        */
-      public Builder setThumbprintBytes(
+      @java.lang.Deprecated public Builder setThumbprintBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -1872,21 +2262,33 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType type_ = Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType.UnknownCertificateType;
       /**
-       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+       * </pre>
        */
-      public boolean hasType() {
+      @java.lang.Deprecated public boolean hasType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType getType() {
         return type_;
       }
       /**
-       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+       * </pre>
        */
-      public Builder setType(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType value) {
+      @java.lang.Deprecated public Builder setType(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1896,9 +2298,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2;</code>
+       * <code>required .Diadoc.Api.Proto.CertificateType Type = 2 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Type вместо этого
+       * </pre>
        */
-      public Builder clearType() {
+      @java.lang.Deprecated public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000002);
         type_ = Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateType.UnknownCertificateType;
         onChanged();
@@ -1907,30 +2313,46 @@ public final class CertificateInfoV2Protos {
 
       private long validFrom_ ;
       /**
-       * <code>optional sfixed64 ValidFrom = 3;</code>
+       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+       * </pre>
        */
-      public boolean hasValidFrom() {
+      @java.lang.Deprecated public boolean hasValidFrom() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3;</code>
+       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+       * </pre>
        */
-      public long getValidFrom() {
+      @java.lang.Deprecated public long getValidFrom() {
         return validFrom_;
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3;</code>
+       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+       * </pre>
        */
-      public Builder setValidFrom(long value) {
+      @java.lang.Deprecated public Builder setValidFrom(long value) {
         bitField0_ |= 0x00000004;
         validFrom_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 ValidFrom = 3;</code>
+       * <code>optional sfixed64 ValidFrom = 3 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidFrom вместо этого
+       * </pre>
        */
-      public Builder clearValidFrom() {
+      @java.lang.Deprecated public Builder clearValidFrom() {
         bitField0_ = (bitField0_ & ~0x00000004);
         validFrom_ = 0L;
         onChanged();
@@ -1939,30 +2361,46 @@ public final class CertificateInfoV2Protos {
 
       private long validTo_ ;
       /**
-       * <code>optional sfixed64 ValidTo = 4;</code>
+       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+       * </pre>
        */
-      public boolean hasValidTo() {
+      @java.lang.Deprecated public boolean hasValidTo() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4;</code>
+       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+       * </pre>
        */
-      public long getValidTo() {
+      @java.lang.Deprecated public long getValidTo() {
         return validTo_;
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4;</code>
+       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+       * </pre>
        */
-      public Builder setValidTo(long value) {
+      @java.lang.Deprecated public Builder setValidTo(long value) {
         bitField0_ |= 0x00000008;
         validTo_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 ValidTo = 4;</code>
+       * <code>optional sfixed64 ValidTo = 4 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.ValidTo вместо этого
+       * </pre>
        */
-      public Builder clearValidTo() {
+      @java.lang.Deprecated public Builder clearValidTo() {
         bitField0_ = (bitField0_ & ~0x00000008);
         validTo_ = 0L;
         onChanged();
@@ -1971,30 +2409,46 @@ public final class CertificateInfoV2Protos {
 
       private long privateKeyValidFrom_ ;
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+       * </pre>
        */
-      public boolean hasPrivateKeyValidFrom() {
+      @java.lang.Deprecated public boolean hasPrivateKeyValidFrom() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+       * </pre>
        */
-      public long getPrivateKeyValidFrom() {
+      @java.lang.Deprecated public long getPrivateKeyValidFrom() {
         return privateKeyValidFrom_;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+       * </pre>
        */
-      public Builder setPrivateKeyValidFrom(long value) {
+      @java.lang.Deprecated public Builder setPrivateKeyValidFrom(long value) {
         bitField0_ |= 0x00000010;
         privateKeyValidFrom_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidFrom = 5;</code>
+       * <code>optional sfixed64 PrivateKeyValidFrom = 5 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidFrom вместо этого
+       * </pre>
        */
-      public Builder clearPrivateKeyValidFrom() {
+      @java.lang.Deprecated public Builder clearPrivateKeyValidFrom() {
         bitField0_ = (bitField0_ & ~0x00000010);
         privateKeyValidFrom_ = 0L;
         onChanged();
@@ -2003,30 +2457,46 @@ public final class CertificateInfoV2Protos {
 
       private long privateKeyValidTo_ ;
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+       * </pre>
        */
-      public boolean hasPrivateKeyValidTo() {
+      @java.lang.Deprecated public boolean hasPrivateKeyValidTo() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+       * </pre>
        */
-      public long getPrivateKeyValidTo() {
+      @java.lang.Deprecated public long getPrivateKeyValidTo() {
         return privateKeyValidTo_;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+       * </pre>
        */
-      public Builder setPrivateKeyValidTo(long value) {
+      @java.lang.Deprecated public Builder setPrivateKeyValidTo(long value) {
         bitField0_ |= 0x00000020;
         privateKeyValidTo_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional sfixed64 PrivateKeyValidTo = 6;</code>
+       * <code>optional sfixed64 PrivateKeyValidTo = 6 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.PrivateKeyValidTo вместо этого
+       * </pre>
        */
-      public Builder clearPrivateKeyValidTo() {
+      @java.lang.Deprecated public Builder clearPrivateKeyValidTo() {
         bitField0_ = (bitField0_ & ~0x00000020);
         privateKeyValidTo_ = 0L;
         onChanged();
@@ -2035,15 +2505,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object organizationName_ = "";
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public boolean hasOrganizationName() {
+      @java.lang.Deprecated public boolean hasOrganizationName() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public java.lang.String getOrganizationName() {
+      @java.lang.Deprecated public java.lang.String getOrganizationName() {
         java.lang.Object ref = organizationName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2058,9 +2536,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getOrganizationNameBytes() {
         java.lang.Object ref = organizationName_;
         if (ref instanceof String) {
@@ -2074,9 +2556,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public Builder setOrganizationName(
+      @java.lang.Deprecated public Builder setOrganizationName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2087,18 +2573,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public Builder clearOrganizationName() {
+      @java.lang.Deprecated public Builder clearOrganizationName() {
         bitField0_ = (bitField0_ & ~0x00000040);
         organizationName_ = getDefaultInstance().getOrganizationName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string OrganizationName = 7;</code>
+       * <code>optional string OrganizationName = 7 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.OrganizationName вместо этого
+       * </pre>
        */
-      public Builder setOrganizationNameBytes(
+      @java.lang.Deprecated public Builder setOrganizationNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2111,15 +2605,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object inn_ = "";
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public boolean hasInn() {
+      @java.lang.Deprecated public boolean hasInn() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public java.lang.String getInn() {
+      @java.lang.Deprecated public java.lang.String getInn() {
         java.lang.Object ref = inn_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2134,9 +2636,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getInnBytes() {
         java.lang.Object ref = inn_;
         if (ref instanceof String) {
@@ -2150,9 +2656,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public Builder setInn(
+      @java.lang.Deprecated public Builder setInn(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2163,18 +2673,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public Builder clearInn() {
+      @java.lang.Deprecated public Builder clearInn() {
         bitField0_ = (bitField0_ & ~0x00000080);
         inn_ = getDefaultInstance().getInn();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string Inn = 8;</code>
+       * <code>optional string Inn = 8 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Inn вместо этого
+       * </pre>
        */
-      public Builder setInnBytes(
+      @java.lang.Deprecated public Builder setInnBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2187,15 +2705,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userFirstName_ = "";
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public boolean hasUserFirstName() {
+      @java.lang.Deprecated public boolean hasUserFirstName() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public java.lang.String getUserFirstName() {
+      @java.lang.Deprecated public java.lang.String getUserFirstName() {
         java.lang.Object ref = userFirstName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2210,9 +2736,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getUserFirstNameBytes() {
         java.lang.Object ref = userFirstName_;
         if (ref instanceof String) {
@@ -2226,9 +2756,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public Builder setUserFirstName(
+      @java.lang.Deprecated public Builder setUserFirstName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2239,18 +2773,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public Builder clearUserFirstName() {
+      @java.lang.Deprecated public Builder clearUserFirstName() {
         bitField0_ = (bitField0_ & ~0x00000100);
         userFirstName_ = getDefaultInstance().getUserFirstName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserFirstName = 9;</code>
+       * <code>optional string UserFirstName = 9 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserFirstName вместо этого
+       * </pre>
        */
-      public Builder setUserFirstNameBytes(
+      @java.lang.Deprecated public Builder setUserFirstNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2263,15 +2805,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userMiddleName_ = "";
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public boolean hasUserMiddleName() {
+      @java.lang.Deprecated public boolean hasUserMiddleName() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public java.lang.String getUserMiddleName() {
+      @java.lang.Deprecated public java.lang.String getUserMiddleName() {
         java.lang.Object ref = userMiddleName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2286,9 +2836,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getUserMiddleNameBytes() {
         java.lang.Object ref = userMiddleName_;
         if (ref instanceof String) {
@@ -2302,9 +2856,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public Builder setUserMiddleName(
+      @java.lang.Deprecated public Builder setUserMiddleName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2315,18 +2873,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public Builder clearUserMiddleName() {
+      @java.lang.Deprecated public Builder clearUserMiddleName() {
         bitField0_ = (bitField0_ & ~0x00000200);
         userMiddleName_ = getDefaultInstance().getUserMiddleName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserMiddleName = 10;</code>
+       * <code>optional string UserMiddleName = 10 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserMiddleName вместо этого
+       * </pre>
        */
-      public Builder setUserMiddleNameBytes(
+      @java.lang.Deprecated public Builder setUserMiddleNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2339,15 +2905,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userLastName_ = "";
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public boolean hasUserLastName() {
+      @java.lang.Deprecated public boolean hasUserLastName() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public java.lang.String getUserLastName() {
+      @java.lang.Deprecated public java.lang.String getUserLastName() {
         java.lang.Object ref = userLastName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2362,9 +2936,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getUserLastNameBytes() {
         java.lang.Object ref = userLastName_;
         if (ref instanceof String) {
@@ -2378,9 +2956,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public Builder setUserLastName(
+      @java.lang.Deprecated public Builder setUserLastName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2391,18 +2973,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public Builder clearUserLastName() {
+      @java.lang.Deprecated public Builder clearUserLastName() {
         bitField0_ = (bitField0_ & ~0x00000400);
         userLastName_ = getDefaultInstance().getUserLastName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserLastName = 11;</code>
+       * <code>optional string UserLastName = 11 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserLastName вместо этого
+       * </pre>
        */
-      public Builder setUserLastNameBytes(
+      @java.lang.Deprecated public Builder setUserLastNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2415,15 +3005,23 @@ public final class CertificateInfoV2Protos {
 
       private java.lang.Object userShortName_ = "";
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public boolean hasUserShortName() {
+      @java.lang.Deprecated public boolean hasUserShortName() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public java.lang.String getUserShortName() {
+      @java.lang.Deprecated public java.lang.String getUserShortName() {
         java.lang.Object ref = userShortName_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
@@ -2438,9 +3036,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public com.google.protobuf.ByteString
+      @java.lang.Deprecated public com.google.protobuf.ByteString
           getUserShortNameBytes() {
         java.lang.Object ref = userShortName_;
         if (ref instanceof String) {
@@ -2454,9 +3056,13 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public Builder setUserShortName(
+      @java.lang.Deprecated public Builder setUserShortName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2467,18 +3073,26 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public Builder clearUserShortName() {
+      @java.lang.Deprecated public Builder clearUserShortName() {
         bitField0_ = (bitField0_ & ~0x00000800);
         userShortName_ = getDefaultInstance().getUserShortName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string UserShortName = 12;</code>
+       * <code>optional string UserShortName = 12 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.UserShortName вместо этого
+       * </pre>
        */
-      public Builder setUserShortNameBytes(
+      @java.lang.Deprecated public Builder setUserShortNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
@@ -2491,30 +3105,46 @@ public final class CertificateInfoV2Protos {
 
       private boolean isDefault_ ;
       /**
-       * <code>optional bool IsDefault = 13;</code>
+       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+       * </pre>
        */
-      public boolean hasIsDefault() {
+      @java.lang.Deprecated public boolean hasIsDefault() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       /**
-       * <code>optional bool IsDefault = 13;</code>
+       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+       * </pre>
        */
-      public boolean getIsDefault() {
+      @java.lang.Deprecated public boolean getIsDefault() {
         return isDefault_;
       }
       /**
-       * <code>optional bool IsDefault = 13;</code>
+       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+       * </pre>
        */
-      public Builder setIsDefault(boolean value) {
+      @java.lang.Deprecated public Builder setIsDefault(boolean value) {
         bitField0_ |= 0x00001000;
         isDefault_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional bool IsDefault = 13;</code>
+       * <code>optional bool IsDefault = 13 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.IsDefault вместо этого
+       * </pre>
        */
-      public Builder clearIsDefault() {
+      @java.lang.Deprecated public Builder clearIsDefault() {
         bitField0_ = (bitField0_ & ~0x00001000);
         isDefault_ = false;
         onChanged();
@@ -2523,21 +3153,33 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType subjectType_ = Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType.UnknownCertificateSubjectType;
       /**
-       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+       * </pre>
        */
-      public boolean hasSubjectType() {
+      @java.lang.Deprecated public boolean hasSubjectType() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType getSubjectType() {
         return subjectType_;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+       * </pre>
        */
-      public Builder setSubjectType(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType value) {
+      @java.lang.Deprecated public Builder setSubjectType(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2547,9 +3189,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14;</code>
+       * <code>optional .Diadoc.Api.Proto.CertificateSubjectType SubjectType = 14 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.SubjectType вместо этого
+       * </pre>
        */
-      public Builder clearSubjectType() {
+      @java.lang.Deprecated public Builder clearSubjectType() {
         bitField0_ = (bitField0_ & ~0x00002000);
         subjectType_ = Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateSubjectType.UnknownCertificateSubjectType;
         onChanged();
@@ -2565,27 +3211,43 @@ public final class CertificateInfoV2Protos {
         }
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
+      @java.lang.Deprecated public java.util.List<Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> getUsagesList() {
         return java.util.Collections.unmodifiableList(usages_);
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public int getUsagesCount() {
+      @java.lang.Deprecated public int getUsagesCount() {
         return usages_.size();
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage getUsages(int index) {
         return usages_.get(index);
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public Builder setUsages(
+      @java.lang.Deprecated public Builder setUsages(
           int index, Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage value) {
         if (value == null) {
           throw new NullPointerException();
@@ -2596,9 +3258,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public Builder addUsages(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage value) {
+      @java.lang.Deprecated public Builder addUsages(Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2608,9 +3274,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public Builder addAllUsages(
+      @java.lang.Deprecated public Builder addAllUsages(
           java.lang.Iterable<? extends Diadoc.Api.Proto.CertificateInfoV2Protos.CertificateUsage> values) {
         ensureUsagesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2619,9 +3289,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15;</code>
+       * <code>repeated .Diadoc.Api.Proto.CertificateUsage Usages = 15 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.Usages вместо этого
+       * </pre>
        */
-      public Builder clearUsages() {
+      @java.lang.Deprecated public Builder clearUsages() {
         usages_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
@@ -2630,21 +3304,33 @@ public final class CertificateInfoV2Protos {
 
       private Diadoc.Api.Proto.CertificateInfoV2Protos.DssType dssType_ = Diadoc.Api.Proto.CertificateInfoV2Protos.DssType.UnknownDssType;
       /**
-       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+       * </pre>
        */
-      public boolean hasDssType() {
+      @java.lang.Deprecated public boolean hasDssType() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+       * </pre>
        */
-      public Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType() {
+      @java.lang.Deprecated public Diadoc.Api.Proto.CertificateInfoV2Protos.DssType getDssType() {
         return dssType_;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+       * </pre>
        */
-      public Builder setDssType(Diadoc.Api.Proto.CertificateInfoV2Protos.DssType value) {
+      @java.lang.Deprecated public Builder setDssType(Diadoc.Api.Proto.CertificateInfoV2Protos.DssType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2654,9 +3340,13 @@ public final class CertificateInfoV2Protos {
         return this;
       }
       /**
-       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16;</code>
+       * <code>optional .Diadoc.Api.Proto.DssType DssType = 16 [deprecated = true];</code>
+       *
+       * <pre>
+       * Устарело. Используйте Diadoc.Api.Proto.Certificates.CertificateInfoV2.DssType вместо этого
+       * </pre>
        */
-      public Builder clearDssType() {
+      @java.lang.Deprecated public Builder clearDssType() {
         bitField0_ = (bitField0_ & ~0x00008000);
         dssType_ = Diadoc.Api.Proto.CertificateInfoV2Protos.DssType.UnknownDssType;
         onChanged();
@@ -2689,30 +3379,34 @@ public final class CertificateInfoV2Protos {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CertificateInfoV2.proto\022\020Diadoc.Api.Pr" +
-      "oto\"\351\003\n\021CertificateInfoV2\022\022\n\nThumbprint\030" +
-      "\001 \002(\t\022/\n\004Type\030\002 \002(\0162!.Diadoc.Api.Proto.C" +
-      "ertificateType\022\021\n\tValidFrom\030\003 \001(\020\022\017\n\007Val" +
-      "idTo\030\004 \001(\020\022\033\n\023PrivateKeyValidFrom\030\005 \001(\020\022" +
-      "\031\n\021PrivateKeyValidTo\030\006 \001(\020\022\030\n\020Organizati" +
-      "onName\030\007 \001(\t\022\013\n\003Inn\030\010 \001(\t\022\025\n\rUserFirstNa" +
-      "me\030\t \001(\t\022\026\n\016UserMiddleName\030\n \001(\t\022\024\n\014User" +
-      "LastName\030\013 \001(\t\022\025\n\rUserShortName\030\014 \001(\t\022\021\n" +
-      "\tIsDefault\030\r \001(\010\022=\n\013SubjectType\030\016 \001(\0162(.",
-      "Diadoc.Api.Proto.CertificateSubjectType\022" +
-      "2\n\006Usages\030\017 \003(\0162\".Diadoc.Api.Proto.Certi" +
-      "ficateUsage\022*\n\007DssType\030\020 \001(\0162\031.Diadoc.Ap" +
-      "i.Proto.DssType*z\n\017CertificateType\022\032\n\026Un" +
-      "knownCertificateType\020\000\022\030\n\024TokenCertifica" +
-      "teType\020\001\022\026\n\022DssCertificateType\020\002\022\031\n\025Kont" +
-      "urCertificateType\020\003*v\n\026CertificateSubjec" +
-      "tType\022!\n\035UnknownCertificateSubjectType\020\000" +
-      "\022\017\n\013LegalEntity\020\001\022\024\n\020IndividualEntity\020\002\022" +
-      "\022\n\016PhysicalPerson\020\003*\\\n\007DssType\022\022\n\016Unknow",
-      "nDssType\020\000\022\t\n\005MyDss\020\001\022\017\n\013KSignServer\020\002\022\020" +
-      "\n\014KSignRutoken\020\003\022\017\n\013KSignMobile\020\004*^\n\020Cer" +
-      "tificateUsage\022\020\n\014UnknownUsage\020\000\022\032\n\026Kontu" +
-      "rCertificateUsage\020\001\022\016\n\nTokenUsage\020\002\022\014\n\010D" +
-      "ssUsage\020\003B\031B\027CertificateInfoV2Protos"
+      "oto\"\251\004\n\021CertificateInfoV2\022\026\n\nThumbprint\030" +
+      "\001 \002(\tB\002\030\001\0223\n\004Type\030\002 \002(\0162!.Diadoc.Api.Pro" +
+      "to.CertificateTypeB\002\030\001\022\025\n\tValidFrom\030\003 \001(" +
+      "\020B\002\030\001\022\023\n\007ValidTo\030\004 \001(\020B\002\030\001\022\037\n\023PrivateKey" +
+      "ValidFrom\030\005 \001(\020B\002\030\001\022\035\n\021PrivateKeyValidTo" +
+      "\030\006 \001(\020B\002\030\001\022\034\n\020OrganizationName\030\007 \001(\tB\002\030\001" +
+      "\022\017\n\003Inn\030\010 \001(\tB\002\030\001\022\031\n\rUserFirstName\030\t \001(\t" +
+      "B\002\030\001\022\032\n\016UserMiddleName\030\n \001(\tB\002\030\001\022\030\n\014User" +
+      "LastName\030\013 \001(\tB\002\030\001\022\031\n\rUserShortName\030\014 \001(",
+      "\tB\002\030\001\022\025\n\tIsDefault\030\r \001(\010B\002\030\001\022A\n\013SubjectT" +
+      "ype\030\016 \001(\0162(.Diadoc.Api.Proto.Certificate" +
+      "SubjectTypeB\002\030\001\0226\n\006Usages\030\017 \003(\0162\".Diadoc" +
+      ".Api.Proto.CertificateUsageB\002\030\001\022.\n\007DssTy" +
+      "pe\030\020 \001(\0162\031.Diadoc.Api.Proto.DssTypeB\002\030\001*" +
+      "\212\001\n\017CertificateType\022\036\n\026UnknownCertificat" +
+      "eType\020\000\032\002\010\001\022\034\n\024TokenCertificateType\020\001\032\002\010" +
+      "\001\022\032\n\022DssCertificateType\020\002\032\002\010\001\022\035\n\025KonturC" +
+      "ertificateType\020\003\032\002\010\001*\206\001\n\026CertificateSubj" +
+      "ectType\022%\n\035UnknownCertificateSubjectType",
+      "\020\000\032\002\010\001\022\023\n\013LegalEntity\020\001\032\002\010\001\022\030\n\020Individua" +
+      "lEntity\020\002\032\002\010\001\022\026\n\016PhysicalPerson\020\003\032\002\010\001*p\n" +
+      "\007DssType\022\026\n\016UnknownDssType\020\000\032\002\010\001\022\r\n\005MyDs" +
+      "s\020\001\032\002\010\001\022\023\n\013KSignServer\020\002\032\002\010\001\022\024\n\014KSignRut" +
+      "oken\020\003\032\002\010\001\022\023\n\013KSignMobile\020\004\032\002\010\001*n\n\020Certi" +
+      "ficateUsage\022\024\n\014UnknownUsage\020\000\032\002\010\001\022\036\n\026Kon" +
+      "turCertificateUsage\020\001\032\002\010\001\022\022\n\nTokenUsage\020" +
+      "\002\032\002\010\001\022\020\n\010DssUsage\020\003\032\002\010\001B\031B\027CertificateIn" +
+      "foV2Protos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

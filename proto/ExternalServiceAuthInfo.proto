@@ -1,6 +1,10 @@
 package Diadoc.Api.Proto;
 
+// Структура устарела и будет удалена из API 07 апреля 2025.
 message ExternalServiceAuthInfo {
-	optional string ServiceUserId = 1;
-	optional string Thumbprint = 2;
+	// Устарело. Это поле будет удалено из API 07 апреля 2025.
+	optional string ServiceUserId = 1 [deprecated = true];
+
+	// Устарело. Это поле будет удалено из API 07 апреля 2025.
+	optional string Thumbprint = 2 [deprecated = true];
 }

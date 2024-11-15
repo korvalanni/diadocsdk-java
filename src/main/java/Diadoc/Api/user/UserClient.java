@@ -39,6 +39,12 @@ public class UserClient {
         }
     }
 
+    /**
+     * Метод устарел и будет удален из API 06 января 2025.
+     * Пожалуйста, ознакомьтесь с документацией для подробной информации:
+     * <a href="https://developer.kontur.ru/docs/diadoc-api/http/removal/UpdateMyUser.html">документация по методу updateMyUser</a>
+     */
+    @Deprecated
     public UserV2 updateMyUser(UserToUpdate userToUpdate) throws DiadocSdkException {
         if (userToUpdate == null) {
             throw new IllegalArgumentException("userToUpdate");
