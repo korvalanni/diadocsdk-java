@@ -69,6 +69,7 @@ public class DocumentTypeClient {
      * @deprecated Метод устарел.
      * Используйте {@link #detectDocumentTitles(String, byte[])}
      */
+    @Deprecated
     public DetectDocumentTypesResponse detectDocumentTypes(String boxId, byte[] content) throws DiadocSdkException {
         if (Tools.isNullOrEmpty(boxId)) {
             throw new IllegalArgumentException("boxId");
