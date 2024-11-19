@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.kontur.diadoc</groupId>
@@ -10,7 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <protobuf.version>2.6.1</protobuf.version>
+        <protobuf.version>4.26.1</protobuf.version>
+        <protobuf.plugin.version>0.9.4</protobuf.plugin.version>
         <httpClient.version>4.5.6</httpClient.version>
         <fluent-hc.version>4.5.10</fluent-hc.version>
         <commons-io.version>2.6</commons-io.version>
@@ -26,6 +28,8 @@
         <jcryptop.version>2.0.40450-A</jcryptop.version>
 
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <protobuf.plugin.version>0.9.4</protobuf.plugin.version>
     </properties>
 
     <dependencies>
@@ -35,6 +39,22 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>${protobuf.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protoc -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protoc</artifactId>
+            <version>${protobuf.version}</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.4.2</version>
         </dependency>
 
         <!-- http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -120,23 +140,18 @@
             <artifactId>annotations</artifactId>
             <version>${annotations.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
+        <dependency>
+            <groupId>kr.motd.maven</groupId>
+            <artifactId>os-maven-plugin</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
-            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
 
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
             <plugin>
@@ -148,6 +163,20 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
+    <profiles>
+        <!-- Add OS-specific profile for Protoc -->
+        <profile>
+            <id>os-default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <os.detected.classifier>${os.detected.classifier}</os.detected.classifier>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
