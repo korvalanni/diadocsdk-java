@@ -12,7 +12,7 @@ import "Docflow/RoamingNotification.proto";
 
 package Diadoc.Api.Proto.Docflow;
 
-option java_outer_classname = "DocflowApiProtos";
+option java_outer_classname = "DocflowProtos";
 
 message Docflow
 {

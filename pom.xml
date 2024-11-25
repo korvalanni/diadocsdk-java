@@ -5,14 +5,14 @@
 
     <groupId>ru.kontur.diadoc</groupId>
     <artifactId>diadocsdk</artifactId>
-    <version>3.20.0-dev.5296.26860</version>
+    <version>3.23.4-dev.5434.42358</version>
 
     <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <protobuf.version>4.26.1</protobuf.version>
-        <protobuf.plugin.version>0.9.4</protobuf.plugin.version>
+        <protobuf.version>2.6.1</protobuf.version>
+        <maven-protoc-plugin.version>0.3.2</maven-protoc-plugin.version>
         <httpClient.version>4.5.6</httpClient.version>
         <fluent-hc.version>4.5.10</fluent-hc.version>
         <commons-io.version>2.6</commons-io.version>
@@ -141,17 +141,39 @@
             <version>${annotations.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
-        <dependency>
-            <groupId>kr.motd.maven</groupId>
-            <artifactId>os-maven-plugin</artifactId>
-            <version>1.7.1</version>
-        </dependency>
-
     </dependencies>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>1.5.0.Final</version>
+            </extension>
+        </extensions>
+
         <plugins>
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.6.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/*.proto</include>
+                    </includes>
+                    <protocArtifact>
+                        com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}
+                    </protocArtifact>
+                    <outputDirectory>${project.basedir}/src/main/java/Diadoc/Api/Proto</outputDirectory>
+                </configuration>
+            </plugin>
 
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
             <plugin>
@@ -166,17 +188,5 @@
 
         </plugins>
     </build>
-    <profiles>
-        <!-- Add OS-specific profile for Protoc -->
-        <profile>
-            <id>os-default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <os.detected.classifier>${os.detected.classifier}</os.detected.classifier>
-            </properties>
-        </profile>
-    </profiles>
 
 </project>
