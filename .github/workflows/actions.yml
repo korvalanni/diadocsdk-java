@@ -33,28 +33,32 @@ jobs:
           unzip -o ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
             -d ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
-          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/* ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/
-          rmdir ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
+          mkdir -p ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/
+          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/dep/JCP-2.0.40450-A.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/JCP.jar
+          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/dep/asn1rt-2.0.40450-A.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/asn1rt.jar
+          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/dep/ASN1P-2.0.40450-A.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/ASN1P.jar
+          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/dep/JCryptoP-2.0.40450-A.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/JCryptoP.jar
 
       - name: Debug Directory Content
-        run: ls -l ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
+        run: ls -l ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/
 
       - name: Debug Environment Variables
         run: echo "JCP_FILENAME_PREFIX=${{ env.JCP_FILENAME_PREFIX }} JCP_VERSION=${{ env.JCP_VERSION }}"
 
       - name: Install JCP Dependencies
         run: |
+          # Список JAR-файлов с их groupId и artifactId
           jars=(
-          "JCP.jar ru.cryptopro jcp"
-          "asn1rt.jar com.objsys asn1rt"
-          "ASN1P.jar ru.cryptopro asn1p"
-          "JCryptoP.jar ru.cryptopro jcryptop"
+            "JCP.jar ru.cryptopro jcp"
+            "asn1rt.jar com.objsys asn1rt"
+            "ASN1P.jar ru.cryptopro asn1p"
+            "JCryptoP.jar ru.cryptopro jcryptop"
           )
-  
+          
           for jar in "${jars[@]}"; do
             set -- $jar
             mvn install:install-file \
-              -Dfile=./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/$1 \
+              -Dfile=./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/$1 \
               -DgroupId=$2 \
               -DartifactId=$3 \
               -Dversion=${{ env.JCP_VERSION }} \
