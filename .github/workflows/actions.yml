@@ -29,10 +29,12 @@ jobs:
             -in ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip.enc \
             -out ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
             -pass env:DIADOC_SIGNING_SECRET
-          
+
           unzip -o ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
             -d ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
+          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/* ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/
+          rmdir ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
       - name: Debug Directory Content
         run: ls -l ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
@@ -49,16 +51,16 @@ jobs:
             "JCryptoP.jar ru.CryptoPro JCryptoP"
           )
 
+          # Установка JAR файлов через Maven
           for jar in "${jars[@]}"; do
             set -- $jar
             mvn install:install-file \
-              -Dfile=$1 \
+              -Dfile=./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/$1 \
               -DgroupId=$2 \
               -DartifactId=$3 \
               -Dversion=${{ env.JCP_VERSION }} \
               -Dpackaging=jar
           done
-        working-directory: ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
       - name: Run the build script
         run: mvn package -X
