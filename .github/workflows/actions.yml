@@ -33,12 +33,6 @@ jobs:
           unzip -o ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
             -d ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
-          mkdir -p ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/
-          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/JCP.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/JCP.jar
-          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/asn1rt.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/asn1rt.jar
-          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/ASN1P.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/ASN1P.jar
-          mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/JCryptoP.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/JCryptoP.jar
-
       - name: Install JCP Dependencies
         run: |
           jars=(
@@ -51,7 +45,7 @@ jobs:
           for jar in "${jars[@]}"; do
             set -- $jar
             mvn install:install-file \
-              -Dfile=./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/$1 \
+              -Dfile=./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/$1 \
               -DgroupId=$2 \
               -DartifactId=$3 \
               -Dversion=${{ env.JCP_VERSION }} \
