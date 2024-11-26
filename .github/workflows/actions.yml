@@ -30,8 +30,7 @@ jobs:
             -out ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
             -pass env:DIADOC_SIGNING_SECRET
 
-          unzip -o ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip \
-            -d ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
+          unzip -o ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}.zip 
 
       - name: Install JCP Dependencies
         run: |
