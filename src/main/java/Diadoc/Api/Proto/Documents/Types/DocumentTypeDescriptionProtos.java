@@ -1714,18 +1714,16 @@ public final class DocumentTypeDescriptionProtos {
     java.lang.String[] descriptorData = {
       "\n-Documents/Types/DocumentTypeDescriptio" +
       "n.proto\022 Diadoc.Api.Proto.Documents.Type" +
-      "s\032\036Invoicing/ExtendedSigner.proto\"N\n\024Det" +
-      "ectedDocumentType\022\023\n\013TypeNamedId\030\001 \002(\t\022\020" +
-      "\n\010Function\030\002 \002(\t\022\017\n\007Version\030\003 \002(\t\"l\n\033Det" +
-      "ectDocumentTypesResponse\022M\n\rDocumentType" +
-      "s\030\001 \003(\01326.Diadoc.Api.Proto.Documents.Typ" +
-      "es.DetectedDocumentTypeB\037B\035DocumentTypeD" +
-      "escriptionProtos"
+      "s\"N\n\024DetectedDocumentType\022\023\n\013TypeNamedId" +
+      "\030\001 \002(\t\022\020\n\010Function\030\002 \002(\t\022\017\n\007Version\030\003 \002(" +
+      "\t\"l\n\033DetectDocumentTypesResponse\022M\n\rDocu" +
+      "mentTypes\030\001 \003(\01326.Diadoc.Api.Proto.Docum" +
+      "ents.Types.DetectedDocumentTypeB\037B\035Docum" +
+      "entTypeDescriptionProtos"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          Diadoc.Api.Proto.Invoicing.Signers.ExtendedSignerProtos.getDescriptor(),
         });
     internal_static_Diadoc_Api_Proto_Documents_Types_DetectedDocumentType_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1740,7 +1738,6 @@ public final class DocumentTypeDescriptionProtos {
         internal_static_Diadoc_Api_Proto_Documents_Types_DetectDocumentTypesResponse_descriptor,
         new java.lang.String[] { "DocumentTypes", });
     descriptor.resolveAllFeaturesImmutable();
-    Diadoc.Api.Proto.Invoicing.Signers.ExtendedSignerProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
