@@ -45,13 +45,12 @@ jobs:
       - name: Install JCP Dependencies
         run: |
           jars=(
-            "JCP.jar ru.CryptoPro JCP"
-            "asn1rt.jar com.objsys.asn1j asn1rt"
-            "ASN1P.jar ru.CryptoPro ASN1P"
-            "JCryptoP.jar ru.CryptoPro JCryptoP"
+          "JCP.jar ru.cryptopro jcp"
+          "asn1rt.jar com.objsys asn1rt"
+          "ASN1P.jar ru.cryptopro asn1p"
+          "JCryptoP.jar ru.cryptopro jcryptop"
           )
-
-          # Установка JAR файлов через Maven
+  
           for jar in "${jars[@]}"; do
             set -- $jar
             mvn install:install-file \
