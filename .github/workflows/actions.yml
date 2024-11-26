@@ -34,6 +34,19 @@ jobs:
             -d ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
 
 
+      - name: Debug Directory Content
+        run: ls -l ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}
+
+      - name: Debug Environment Variables
+        run: echo "JCP_FILENAME_PREFIX=${{ env.JCP_FILENAME_PREFIX }} JCP_VERSION=${{ env.JCP_VERSION }}"
+
+      - name: Ensure JCP.jar Exists
+        run: |
+          if [ ! -f "./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/JCP.jar" ]; then
+            echo "JCP.jar not found in directory"
+            exit 1
+          fi
+
       - name: Install JCP Dependencies
         run: |
           jars=(
