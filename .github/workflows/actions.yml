@@ -39,9 +39,6 @@ jobs:
           mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/ASN1P.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/ASN1P.jar
           mv ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/jcp-2.0.40450-A/JCryptoP.jar ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/JCryptoP.jar
 
-      - name: Debug Directory Content
-        run: ls -l ./${{ env.JCP_FILENAME_PREFIX }}${{ env.JCP_VERSION }}/processed/
-
       - name: Install JCP Dependencies
         run: |
           jars=(
