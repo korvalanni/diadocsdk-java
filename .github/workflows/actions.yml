@@ -93,11 +93,13 @@ jobs:
 
 
       - name: Checkout repository
+        if: env.VALID == 'true'
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Publish artifacts
+        if: env.VALID == 'true'
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
