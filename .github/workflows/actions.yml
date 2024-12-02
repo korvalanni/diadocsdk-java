@@ -75,7 +75,7 @@ jobs:
       - name: Validate tag and determine prerelease
         id: validate_tag
         run: |
-          TAG="${GITHUB_REF#refs/tags/version}"
+          TAG="${GITHUB_REF#refs/tags/version/}"
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
           if [[ ! "$TAG" =~ $REGEX ]]; then
             echo "Tag $TAG does not match semantic versioning rules."
