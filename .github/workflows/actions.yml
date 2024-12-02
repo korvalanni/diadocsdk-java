@@ -65,6 +65,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-22.04
+    needs: build
     if: |
       startsWith(github.event.ref, 'refs/tags/version') &&
       github.event.ref != '^refs/tags/version-(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
