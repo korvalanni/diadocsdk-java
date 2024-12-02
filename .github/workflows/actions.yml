@@ -73,21 +73,21 @@ jobs:
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
 
         if: "$TAG" =~ $REGEX
-            steps:
-                - uses: actions/checkout@v3
-                  with:
-                    fetch-depth: 0
+          steps:
+            - uses: actions/checkout@v3
+              with:
+                fetch-depth: 0
 
-                - name: Download artifacts
-                  uses: actions/download-artifact@v3
-                  with:
-                    name: packages
+            - name: Download artifacts
+              uses: actions/download-artifact@v3
+              with:
+                name: packages
 
-                - name: Create GitHub Release
-                  uses: softprops/action-gh-release@v1
-                  with:
-                    fail_on_unmatched_files: true
-                    draft: false
-                    prerelease: false
-                    files: |
-                      **/*.jar
+            - name: Create github release
+              uses: softprops/action-gh-release@v1
+              with:
+                fail_on_unmatched_files: true
+                draft: false
+                prerelease: false
+                files: |
+                  **/*.jar
