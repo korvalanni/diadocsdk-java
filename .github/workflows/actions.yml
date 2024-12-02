@@ -67,27 +67,41 @@ jobs:
     runs-on: ubuntu-22.04
     needs: build
     steps:
-      - name: Validate tag and release
+      - name: Extract tag
+        id: extract_tag
         run: |
-          TAG="${TAG#versions/}"
+          TAG="${{ github.ref }}"
+          TAG="${TAG#refs/tags/}"
+          echo "TAG=${TAG}" >> $GITHUB_ENV
+
+      - name: Validate tag
+        id: validate_tag
+        run: |
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+          if [[ "${TAG}" =~ $REGEX ]]; then
+            echo "VALID=true" >> $GITHUB_ENV
+          else
+            echo "VALID=false" >> $GITHUB_ENV
+          fi
 
-        if: "$TAG" =~ $REGEX
-          steps:
-            - uses: actions/checkout@v3
-              with:
-                fetch-depth: 0
+      - name: Checkout repository
+        if: env.VALID == 'true'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-            - name: Download artifacts
-              uses: actions/download-artifact@v3
-              with:
-                name: packages
+      - name: Download artifacts
+        if: env.VALID == 'true'
+        uses: actions/download-artifact@v3
+        with:
+          name: packages
 
-            - name: Create github release
-              uses: softprops/action-gh-release@v1
-              with:
-                fail_on_unmatched_files: true
-                draft: false
-                prerelease: false
-                files: |
-                  **/*.jar
+      - name: Create GitHub release
+        if: env.VALID == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
+          files: |
+            **/*.jar
