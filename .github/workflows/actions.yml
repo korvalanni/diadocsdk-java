@@ -81,7 +81,7 @@ jobs:
           
           if [[ ! "$TAG" =~ $REGEX ]]; then
             echo "Tag $TAG does not match semantic versioning rules. Using 'latest' as fallback."
-            exit 0
+            exit 78
           fi
           
           if [[ "$TAG" == *-* ]]; then
