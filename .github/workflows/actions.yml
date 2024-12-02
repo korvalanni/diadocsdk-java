@@ -69,21 +69,17 @@ jobs:
     if: |
       startsWith(github.event.ref, 'refs/tags/version') &&
       github.event.ref != '^refs/tags/version-(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
-
     steps:
-      - name: Extract tag
-        id: extract_tag
-        run: |
-          TAG="${{ github.ref }}"
-          TAG="${TAG#refs/tags/}"
-          echo "Extracted tag: ${TAG}"
-
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Publish artifacts
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: packages
+
+      - name: Create github release
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
