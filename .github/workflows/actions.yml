@@ -65,41 +65,23 @@ jobs:
 
   publish:
     runs-on: ubuntu-22.04
-    needs: build
+    if: |
+      startsWith(github.event.ref, 'refs/tags/version') &&
+      github.event.ref != '^refs/tags/versions/[0-9]+\.[0-9]+\.[0-9]+$'
     steps:
       - name: Extract tag
         id: extract_tag
         run: |
           TAG="${{ github.ref }}"
           TAG="${TAG#refs/tags/}"
-          echo "TAG=${TAG}" >> $GITHUB_ENV
           echo "Extracted tag: ${TAG}"
 
-      - name: Validate tag
-        id: validate_tag
-        run: |
-          REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
-          if [[ "${TAG}" =~ $REGEX ]]; then
-            echo "VALID=true" >> $GITHUB_ENV
-          else
-            echo "VALID=false" >> $GITHUB_ENV
-          fi
-
-      - name: Cancel if tag not matched
-        if: env.VALID == 'false'
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          message: "Job cancelled because the tag does not match the required format."
-
-
       - name: Checkout repository
-        if: env.VALID == 'true'
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Publish artifacts
-        if: env.VALID == 'true'
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
