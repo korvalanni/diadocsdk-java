@@ -78,26 +78,22 @@ jobs:
         id: validate_tag
         run: |
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
-          if [[ "${TAG}" =~ $REGEX ]]; then
-            echo "VALID=true" >> $GITHUB_ENV
-          else
-            echo "VALID=false" >> $GITHUB_ENV
+          if [[ ! "${TAG}" =~ $REGEX ]]; then
+            echo "Invalid tag format: ${TAG}. Cancelling job."
+            exit 78  # Special exit code for "cancelled" in GitHub Actions
           fi
 
       - name: Checkout repository
-        if: env.VALID == 'true'
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Download artifacts
-        if: env.VALID == 'true'
         uses: actions/download-artifact@v3
         with:
           name: packages
 
       - name: Create GitHub release
-        if: env.VALID == 'true'
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
