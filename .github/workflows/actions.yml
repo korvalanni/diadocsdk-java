@@ -64,7 +64,6 @@ jobs:
             target/*.jar
           if-no-files-found: error
 
-  jobs:
     publish:
       runs-on: ubuntu-22.04
       needs: build
