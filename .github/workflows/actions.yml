@@ -110,6 +110,7 @@ jobs:
           prerelease: ${{ env.prerelease }}
           files: |
             **/*.jar
+
       - name: Cancel job if tag is invalid
         if: env.tag_valid == 'false'
         uses: andymckay/officially-cancel-action@v1
