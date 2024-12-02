@@ -66,6 +66,9 @@ jobs:
   publish:
     runs-on: ubuntu-22.04
     needs: build
+    concurrency:
+      group: publish-${{ github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Extract tag
         id: extract_tag
@@ -73,27 +76,26 @@ jobs:
           TAG="${{ github.ref }}"
           TAG="${TAG#refs/tags/}"
           echo "TAG=${TAG}" >> $GITHUB_ENV
+          echo "Extracted tag: ${TAG}"
 
       - name: Validate tag
         id: validate_tag
         run: |
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
-          if [[ ! "${TAG}" =~ $REGEX ]]; then
-            echo "Invalid tag format: ${TAG}. Cancelling job."
-            exit 78  # Special exit code for "cancelled" in GitHub Actions
+          if [[ "${TAG}" =~ $REGEX ]]; then
+            echo "VALID=true" >> $GITHUB_ENV
+          else
+            echo "VALID=false" >> $GITHUB_ENV
           fi
 
       - name: Checkout repository
+        if: env.VALID == 'true'
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: packages
-
-      - name: Create GitHub release
+      - name: Publish artifacts
+        if: env.VALID == 'true'
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
