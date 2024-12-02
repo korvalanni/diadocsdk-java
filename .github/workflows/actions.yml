@@ -90,6 +90,7 @@ jobs:
 
       - name: Cancel if tag not matched
         if: env.VALID == 'false'
+        run: echo "Job canceled"
         concurrency:
           group: publish-${{ github.ref }}
           cancel-in-progress: true
