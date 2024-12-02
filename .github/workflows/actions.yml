@@ -81,7 +81,9 @@ jobs:
           
           if [[ ! "$TAG" =~ $REGEX ]]; then
             echo "Tag $TAG does not match semantic versioning rules. Using 'latest' as fallback."
-            uses: andymckay/officially-cancel-action@v1
+            echo "tag_valid=false" >> $GITHUB_ENV
+          else
+            echo "tag_valid=true" >> $GITHUB_ENV
           fi
           
           if [[ "$TAG" == *-* ]]; then
@@ -101,6 +103,7 @@ jobs:
           name: packages
 
       - name: Create GitHub Release
+        if: env.tag_valid == 'true'
         uses: softprops/action-gh-release@v1
         with:
           draft: false
