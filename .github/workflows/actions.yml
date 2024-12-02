@@ -68,7 +68,7 @@ jobs:
     needs: build
     if: |
       startsWith(github.event.ref, 'refs/tags/version') &&
-      github.event.ref == '^refs/tags/versions/(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+      github.event.ref == 'refs/tags/versions/(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
     steps:
       - uses: actions/checkout@v3
         with:
