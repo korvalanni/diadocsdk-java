@@ -67,7 +67,8 @@ jobs:
     runs-on: ubuntu-22.04
     if: |
       startsWith(github.event.ref, 'refs/tags/version') &&
-      github.event.ref != '^refs/tags/versions/[0-9]+\.[0-9]+\.[0-9]+$'
+      github.event.ref != '^refs/tags/version-(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+
     steps:
       - name: Extract tag
         id: extract_tag
