@@ -75,24 +75,36 @@ jobs:
       - name: Validate tag and determine prerelease
         id: validate_tag
         run: |
-          TAG="${GITHUB_REF#refs/tags/}"
+          TAG="${GITHUB_REF#refs/tags/}"  
           TAG="${TAG#versions/}"
           REGEX='^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+          
           if [[ ! "$TAG" =~ $REGEX ]]; then
-            echo "Tag $TAG does not match semantic versioning rules."
-            exit 1
+            echo "Tag $TAG does not match semantic versioning rules. Using 'latest' as fallback."
+            TAG="latest"  # Замена на latest
           fi
+          
+          if [[ "$TAG" == *-* ]]; then
+            echo "This is a prerelease."
+            echo "prerelease=true" >> $GITHUB_ENV
+          else
+            echo "This is a stable release."
+            echo "prerelease=false" >> $GITHUB_ENV
+          fi
+          
+          echo "Validated tag: $TAG"
+          echo "tag=$TAG" >> $GITHUB_ENV
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
           name: packages
 
-      - name: Create github release
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
           draft: false
-          prerelease: false
+          prerelease: ${{ env.prerelease }}
           files: |
-              **/*.jar
+            **/*.jar
