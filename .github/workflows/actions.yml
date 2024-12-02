@@ -66,9 +66,6 @@ jobs:
   publish:
     runs-on: ubuntu-22.04
     needs: build
-    concurrency:
-      group: publish-${{ github.ref }}
-      cancel-in-progress: true
     steps:
       - name: Extract tag
         id: extract_tag
@@ -90,10 +87,10 @@ jobs:
 
       - name: Cancel if tag not matched
         if: env.VALID == 'false'
-        run: echo "Job canceled"
-        concurrency:
-          group: publish-${{ github.ref }}
-          cancel-in-progress: true
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          message: "Job cancelled because the tag does not match the required format."
+
 
       - name: Checkout repository
         uses: actions/checkout@v3
