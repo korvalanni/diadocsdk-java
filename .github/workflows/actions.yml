@@ -71,16 +71,12 @@ jobs:
           for jar in $ARTIFACT_DIR/*.jar; do
             FILE_NAME=$(basename "$jar")
 
-            if [[ "$FILE_NAME" =~ ^diadocsdk ]]; then
-              echo "Skipping file $FILE_NAME: does not start with 'diadocsdk'"
-              VERSION=$(echo "$FILE_NAME" | grep -oP '(?<=diadocsdk-)[^-]+(?:-[^\.]+)?(?=\.jar)')
-              if [[ -z "$VERSION" ]]; then
-                echo "Error: Failed to extract version from $FILE_NAME"
-                exit 1
-              fi
-              ./validate_version.sh "$VERSION"
-              break
+            if [[ -z "$VERSION" ]]; then
+              echo "Error: Failed to extract version from $FILE_NAME"
+              exit 1
             fi
+            ./validate_version.sh "$VERSION"
+          
           done
 
           echo "All artifacts passed validation."
