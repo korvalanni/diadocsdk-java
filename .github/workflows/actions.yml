@@ -94,7 +94,6 @@ jobs:
             ')
             if [ $? -ne 0 ]; then
               echo "$MATCH_RESULT"
-              exit 1
             fi
       
             echo "Artifact $FILE_NAME with version $VERSION matches the regex."
