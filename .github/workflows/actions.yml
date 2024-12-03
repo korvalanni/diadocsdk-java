@@ -76,7 +76,7 @@ jobs:
               exit 1
             fi
             
-            if [[ ! "VERSION" =~ $VERSION_REGEX ]]; then
+            if [[ ! "$VERSION" =~ $VERSION_REGEX ]]; then
               echo "Error: Artifact $VERSION does not match the version regex $VERSION_REGEX"
               exit 1
             fi
