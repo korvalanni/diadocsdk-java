@@ -6,6 +6,7 @@ env:
   JCP_VERSION: 2.0.40450-A
   JCP_FILENAME_PREFIX: jcp-
   DIADOC_SIGNING_SECRET: ${{ secrets.DIADOC_SIGNING_SECRET }}
+  VERSION_REGEX: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
 
 jobs:
   build:
@@ -63,16 +64,41 @@ jobs:
             target/*.jar
           if-no-files-found: error
 
+      - name: Validate artifacts
+        run: |
+          VERSION_REGEX=${{ env.VERSION_REGEX }}
+          ARTIFACT_DIR=target
+       
+          for jar in $ARTIFACT_DIR/*.jar; do
+            FILE_NAME=$(basename "$jar")
+        
+            if [[ ! "$FILE_NAME" =~ $VERSION_REGEX ]]; then
+              echo "Error: Artifact $FILE_NAME does not match the version regex $VERSION_REGEX"
+              exit 1
+            fi
+          done
+          
+          echo "All artifacts match the version regex."
+
   publish:
     runs-on: ubuntu-22.04
     needs: build
     if: |
-      startsWith(github.event.ref, 'refs/tags/version') &&
-      github.event.ref == 'refs/tags/versions/(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|[a-zA-Z][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+      startsWith(github.event.ref, 'refs/tags/version')
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      - name: Validate tag version
+        run: |
+          TAG="${{ github.ref }}"
+          TAG="${TAG#refs/tags/}"
+          echo "Extracted tag: ${TAG}"
+          REGEX=
+          if [[ ! "$TAG" =~ ${{ env.VERSION_REGEX }} ]]; then
+            echo "Tag $TAG does not match semantic versioning rules."
+            exit 1
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
