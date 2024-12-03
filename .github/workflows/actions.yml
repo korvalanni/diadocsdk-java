@@ -76,14 +76,21 @@ jobs:
               exit 1
             fi
             
-            echo "$VERSION" | awk -v regex="$VERSION_REGEX" '
+            MATCH_RESULT=$(echo "$VERSION" | awk -v regex="$VERSION_REGEX" '
+            BEGIN { result=1 }
             {
-              if (!match($0, regex)) {
-                print "Error: Artifact " $0 " does not match the version regex " regex
-                exit 1
-              }
+              if (match($0, regex)) {
+              result=0
+            } else {
+              print "Error: Artifact " $0 " does not match the version regex " regex
             }
-            '          
+            }
+            END { exit result }
+            ')       
+            if [ $? -ne 0 ]; then
+              echo "$MATCH_RESULT"
+              exit 1
+            fi          
           echo "All artifacts match the version regex."
 
   publish:
@@ -102,14 +109,21 @@ jobs:
           TAG="${TAG#refs/tags/}"
           echo "Extracted tag: ${TAG}"
           VERSION_REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-(0|[1-9][0-9]*|[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9][0-9]*|[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$'
-          echo "TAG" | awk -v regex="$VERSION_REGEX" '
-          {
-            if (!match($0, regex)) {
+          MATCH_RESULT=$(echo "$TAG" | awk -v regex="$VERSION_REGEX" '
+            BEGIN { result=1 }
+            {
+              if (match($0, regex)) {
+              result=0
+            } else {
               print "Error: Artifact " $0 " does not match the version regex " regex
-              exit 1
             }
-          }
-          '  
+            }
+            END { exit result }
+            ')       
+            if [ $? -ne 0 ]; then
+              echo "$MATCH_RESULT"
+              exit 1
+            fi  
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
