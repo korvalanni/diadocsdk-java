@@ -77,7 +77,7 @@ jobs:
             fi
             
             if [[ ! "VERSION" =~ $VERSION_REGEX ]]; then
-              echo "Error: Artifact $FILE_NAME does not match the version regex $VERSION_REGEX"
+              echo "Error: Artifact $VERSION does not match the version regex $VERSION_REGEX"
               exit 1
             fi
           done
