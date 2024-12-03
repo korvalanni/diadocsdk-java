@@ -6,7 +6,6 @@ env:
   JCP_VERSION: 2.0.40450-A
   JCP_FILENAME_PREFIX: jcp-
   DIADOC_SIGNING_SECRET: ${{ secrets.DIADOC_SIGNING_SECRET }}
-  VERSION_REGEX: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
 
 jobs:
   build:
@@ -66,7 +65,7 @@ jobs:
 
       - name: Validate artifacts
         run: |
-          VERSION_REGEX=${{ env.VERSION_REGEX }}
+          VERSION_REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
           ARTIFACT_DIR=target
        
           for jar in $ARTIFACT_DIR/*.jar; do
@@ -95,8 +94,8 @@ jobs:
           TAG="${{ github.ref }}"
           TAG="${TAG#refs/tags/}"
           echo "Extracted tag: ${TAG}"
-          REGEX=
-          if [[ ! "$TAG" =~ ${{ env.VERSION_REGEX }} ]]; then
+          REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+          if [[ ! "$TAG" =~ REGEX ]]; then
             echo "Tag $TAG does not match semantic versioning rules."
             exit 1
 
