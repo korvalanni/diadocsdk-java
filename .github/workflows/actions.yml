@@ -94,9 +94,9 @@ jobs:
           TAG="${{ github.ref }}"
           TAG="${TAG#refs/tags/}"
           echo "Extracted tag: ${TAG}"
-          REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
-          if [[ ! "$TAG" =~ REGEX ]]; then
-            echo "Tag $TAG does not match semantic versioning rules."
+          VERSION_REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+          if [[ ! "$TAG" =~ $VERSION_REGEX ]]; then
+            echo "Tag $TAG does not match semantic versioning rules $VERSION_REGEX."
             exit 1
 
       - name: Download artifacts
