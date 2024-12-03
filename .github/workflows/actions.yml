@@ -70,8 +70,13 @@ jobs:
        
           for jar in $ARTIFACT_DIR/*.jar; do
             FILE_NAME=$(basename "$jar")
-        
-            if [[ ! "$FILE_NAME" =~ $VERSION_REGEX ]]; then
+            VERSION=$(echo "$FILE_NAME" | grep -oP '(?<=diadocsdk-)[^-]+(?:-[^\.]+)?(?=\.jar)')
+            if [[ -z "$VERSION" ]]; then
+              echo "Error: Failed to extract version from $FILE_NAME"
+              exit 1
+            fi
+            
+            if [[ ! "VERSION" =~ $VERSION_REGEX ]]; then
               echo "Error: Artifact $FILE_NAME does not match the version regex $VERSION_REGEX"
               exit 1
             fi
