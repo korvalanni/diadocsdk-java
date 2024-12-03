@@ -67,7 +67,7 @@ jobs:
         run: |
           VERSION_REGEX='^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-(0|[1-9][0-9]*|[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9][0-9]*|[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$'
           ARTIFACT_DIR=target
-       
+      
           for jar in $ARTIFACT_DIR/*.jar; do
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | grep -oP '(?<=diadocsdk-)[^-]+(?:-[^\.]+)?(?=\.jar)')
@@ -75,23 +75,29 @@ jobs:
               echo "Error: Failed to extract version from $FILE_NAME"
               exit 1
             fi
-            
+      
             MATCH_RESULT=$(echo "$VERSION" | awk -v regex="$VERSION_REGEX" '
             BEGIN { result=1 }
             {
               if (match($0, regex)) {
-              result=0
-            } else {
-              print "Error: Artifact " $0 " does not match the version regex " regex
-            }
+                result=0
+              } else {
+                print "Error: Artifact " $0 " does not match the version regex " regex
+              }
             }
             END { exit result }
-            ')       
+            ')
             if [ $? -ne 0 ]; then
               echo "$MATCH_RESULT"
               exit 1
-            fi          
+            fi
+      
+            echo "Artifact $FILE_NAME with version $VERSION matches the regex."
+          done
+      
           echo "All artifacts match the version regex."
+  
+  
 
   publish:
     runs-on: ubuntu-22.04
