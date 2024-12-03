@@ -70,7 +70,7 @@ jobs:
 
           for jar in $ARTIFACT_DIR/*.jar; do
             FILE_NAME=$(basename "$jar")
-
+            VERSION=$(echo "$FILE_NAME" | grep -oP '(?<=diadocsdk-)[^-]+(?:-[^\.]+)?(?=\.jar)')
             if [[ -z "$VERSION" ]]; then
               echo "Error: Failed to extract version from $FILE_NAME"
               exit 1
