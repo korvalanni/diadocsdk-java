@@ -95,10 +95,6 @@ jobs:
           for jar in $ARTIFACT_DIR/*.jar; do
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
-            if [ -z "$VERSION" ]; then
-              echo "Failed to extract version from $FILE_NAME"
-              #exit 1
-            fi
           done
           echo "::set-output name=version::$VERSION"
         env:
