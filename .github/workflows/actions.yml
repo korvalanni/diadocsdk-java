@@ -96,7 +96,7 @@ jobs:
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
           done
-          echo "::set-output name=version::$VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
         env:
           ARTIFACT_DIR: target
 
@@ -104,8 +104,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag versions/${{ steps.extract-version.outputs.version }}
-          git push origin versions/${{ steps.extract-version.outputs.version }}
+          git tag versions/${{ env.VERSION }}
+          git push origin versions/${{ env.VERSION }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
@@ -120,8 +120,8 @@ jobs:
           prerelease: false
           files: |
             **/*.jar
-          tag_name: versions/${{ steps.extract-version.outputs.version }}
-          name: Release ${{ steps.extract-version.outputs.version }}
+          tag_name: versions/${{ env.VERSION }}
+          name: Release ${{ env.VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
