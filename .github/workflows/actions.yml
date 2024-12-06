@@ -96,15 +96,13 @@ jobs:
         id: extract-version
         run: |
           ARTIFACT_DIR=packages
-          echo "Checking directory: $ARTIFACT_DIR"
-          ls -la $ARTIFACT_DIR
-          for jar in $ARTIFACT_DIR/*.jar; do
+          echo "$(find . -type f -name "*.jar")"
+
+          for jar in $(find . -type f -name "*.jar"); do
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
             echo "VERSION=$VERSION" >> $GITHUB_ENV
           done
-        env:
-          ARTIFACT_DIR: target
 
       - name: Create Git tag
         run: |
