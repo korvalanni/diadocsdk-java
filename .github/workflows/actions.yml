@@ -97,10 +97,14 @@ jobs:
         run: |
           ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
           JAR_FILES=$(find "$ARTIFACT_DIR" -type f -name "*.jar")
-          for jar in JAR_FILES; do
+          for jar in $JAR_FILES; do
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
-            echo "VERSION=$VERSION" >> $GITHUB_ENV
+            if [ -n "$VERSION" ]; then
+              echo "VERSION=$VERSION" >> $GITHUB_ENV
+            else
+              echo "WARNING: Could not extract version from $FILE_NAME"
+            fi
           done
 
       - name: Create Git tag
