@@ -137,6 +137,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: packages
+
       - name: Validate tag version
         run: |
           chmod +x validate_version.sh
@@ -145,19 +150,21 @@ jobs:
           echo "Extracted version: ${VERSION}"
           ./validate_version.sh "$VERSION"
           
-          for jar in $ARTIFACT_DIR/*.jar; do
+          ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
+          JAR_FILES=$(find "$ARTIFACT_DIR" -type f -name "*.jar")
+          for jar in $JAR_FILES; do
             FILE_NAME=$(basename "$jar")
             MANIFEST_VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
-            if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
+            if [ -n "MANIFEST_VERSION" ]; then
+              echo "MANIFEST_VERSION=$MANIFEST_VERSION" >> $GITHUB_ENV
+              if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
               echo "Version mismatch! Jar version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
               exit 1
-            fi          
-          done    
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: packages
+            fi
+            else
+              echo "WARNING: Could not extract version from $FILE_NAME"
+            fi
+          done
 
       - name: Create github release
         uses: softprops/action-gh-release@v1
