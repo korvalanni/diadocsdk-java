@@ -69,7 +69,7 @@ jobs:
           FILE_NAME=$(basename "$LATEST_JAR")
           VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
           echo "Validating version: $VERSION"
-          ./validate_version.sh "$VERSION"
+          .github/workflows/validate_version.sh "$VERSION"
         
 
       - name: Upload artifacts
