@@ -79,17 +79,25 @@ jobs:
 
       - name: Check if version already tagged
         run: |
-          VERSION=$(echo ${{ github.ref_name }} | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)$/\1/p')
+          if [ "${{ github.ref_type }}" != "tag" ]; then
+            echo "Error: This action is intended to run on tags only."
+            exit 1
+          fi
+
+          VERSION=$(echo ${{ github.ref_name }} | sed -n 's/^refs\/tags\/diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)$/\1/p')
           if [ -z "$VERSION" ]; then
             echo "Error: Could not extract version from ref name."
             exit 1
           fi
-      
+
           if git tag --list | grep -q "^diadocsdk-$VERSION$"; then
             echo "Error: Tag diadocsdk-$VERSION already exists."
             exit 1
           fi
- 
+
+          echo "Version $VERSION is valid and not yet tagged."
+  
+  
 
   publish-auto:
     runs-on: ubuntu-22.04
