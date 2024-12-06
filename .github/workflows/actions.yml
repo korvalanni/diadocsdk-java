@@ -143,6 +143,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: packages
+
       - name: Check versions
         run: |
           ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
@@ -159,11 +164,6 @@ jobs:
               echo "Version mismatch! Jar version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
               exit 1
           fi
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: packages
 
       - name: Create github release
         uses: softprops/action-gh-release@v1
