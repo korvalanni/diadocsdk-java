@@ -159,6 +159,10 @@ jobs:
           echo "Found latest JAR: $LATEST_JAR"
           FILE_NAME=$(basename "$LATEST_JAR")
           MANIFEST_VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
+          
+          TAG="${{ github.ref }}"
+          VERSION=$(echo "$TAG" | sed -n 's|.*/versions/\([0-9a-zA-Z.-]*\)|\1|p')
+          echo "Extracted version: ${VERSION}"
 
           if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
               echo "Version mismatch! Jar version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
