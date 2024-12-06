@@ -76,6 +76,19 @@ jobs:
           done
 
           echo "All artifacts passed validation."
+
+      - name: Check if version already tagged
+        run: |
+          VERSION=$(echo ${{ github.ref_name }} | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)$/\1/p')
+          if [ -z "$VERSION" ]; then
+            echo "Error: Could not extract version from ref name."
+            exit 1
+          fi
+      
+          if git tag --list | grep -q "^diadocsdk-$VERSION$"; then
+            echo "Error: Tag diadocsdk-$VERSION already exists."
+            exit 1
+          fi
  
 
   publish-auto:
