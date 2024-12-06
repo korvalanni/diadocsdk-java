@@ -103,8 +103,6 @@ jobs:
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
             echo "VERSION=$VERSION" >> $GITHUB_ENV
           done
-        env:
-          ARTIFACT_DIR: target
 
       - name: Create Git tag
         run: |
