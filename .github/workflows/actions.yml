@@ -153,7 +153,7 @@ jobs:
           fi
           echo "Found latest JAR: $LATEST_JAR"
           FILE_NAME=$(basename "$LATEST_JAR")
-          MANIFEST_VErSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
+          MANIFEST_VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
 
           if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
               echo "Version mismatch! Jar version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
