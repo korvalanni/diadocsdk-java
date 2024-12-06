@@ -95,10 +95,9 @@ jobs:
       - name: Extract JAR version
         id: extract-version
         run: |
-          ARTIFACT_DIR=packages
-          echo "$(find . -type f -name "*.jar")"
-
-          for jar in $(find . -type f -name "*.jar"); do
+          ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
+          JAR_FILES=$(find "$ARTIFACT_DIR" -type f -name "*.jar")
+          for jar in JAR_FILES; do
             FILE_NAME=$(basename "$jar")
             VERSION=$(echo "$FILE_NAME" | sed -n 's/^diadocsdk-\([0-9.]\+\(-[a-zA-Z0-9.]\+\)*\)\.jar$/\1/p')
             echo "VERSION=$VERSION" >> $GITHUB_ENV
