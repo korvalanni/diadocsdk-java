@@ -99,7 +99,7 @@ jobs:
         id: extract-version
         run: |
           ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
-          JAR_FILE=$(find "$ARTIFACT_DIR" -type f -name "*.jar" |  sort -n | tail -1 | awk '{print $2}')
+          LATEST_JAR=$(find "$ARTIFACT_DIR" -type f -name "*.jar" | sort -n | tail -1)
           if [ -z "$LATEST_JAR" ]; then
             echo "Error: No JAR files found in $ARTIFACT_DIR."
             exit 1
@@ -146,7 +146,7 @@ jobs:
       - name: Check versions
         run: |
           ARTIFACT_DIR="/home/runner/work/diadocsdk-java/diadocsdk-java"
-          JAR_FILE=$(find "$ARTIFACT_DIR" -type f -name "*.jar" |  sort -n | tail -1 | awk '{print $2}')
+          LATEST_JAR=$(find "$ARTIFACT_DIR" -type f -name "*.jar" | sort -n | tail -1)
           if [ -z "$LATEST_JAR" ]; then
             echo "Error: No JAR files found in $ARTIFACT_DIR."
             exit 1
