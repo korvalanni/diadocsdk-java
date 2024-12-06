@@ -95,7 +95,7 @@ jobs:
       - name: Extract JAR version
         id: extract-version
         run: |
-          ARTIFACT_DIR=target
+          ARTIFACT_DIR=packages
           echo "Checking directory: $ARTIFACT_DIR"
           ls -la $ARTIFACT_DIR
           for jar in $ARTIFACT_DIR/*.jar; do
